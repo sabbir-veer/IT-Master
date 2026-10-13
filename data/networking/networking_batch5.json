@@ -1,0 +1,970 @@
+{
+  "dataset_id": "networking_mcq_batch_05_q201_q250",
+  "title": "Computer Networking MCQs (Batch 5: Q201 - Q250)",
+  "topics": {
+    "flow_control_arq": "Flow Control and ARQ Mechanisms",
+    "networking_devices": "Networking Devices and Collision/Broadcast Domains",
+    "error_detection": "Error Detection and Correction Techniques",
+    "transmission_media": "Transmission Media and Physical Characteristics"
+  },
+  "questions": [
+    {
+      "id": "Q201",
+      "topic": "flow_control_arq",
+      "question": "In Stop-and-Wait ARQ, what is the maximum window size allowed for the sender?",
+      "options": [
+        "1",
+        "2",
+        "7",
+        "Unlimited"
+      ],
+      "answer": 0,
+      "explanation": "In Stop-and-Wait ARQ, the sender transmits exactly one frame and waits for an acknowledgment before sending the next frame, meaning sender window size is 1.",
+      "difficulty": "easy",
+      "tags": [
+        "flow_control",
+        "stop_and_wait",
+        "window_size"
+      ]
+    },
+    {
+      "id": "Q202",
+      "topic": "flow_control_arq",
+      "question": "What is the receiver window size in Go-Back-N ARQ?",
+      "options": [
+        "N",
+        "1",
+        "N - 1",
+        "2^(m - 1)"
+      ],
+      "answer": 1,
+      "explanation": "In Go-Back-N ARQ, the receiver window size is always 1 because the receiver accepts only frames that arrive in strictly correct sequential order.",
+      "difficulty": "easy",
+      "tags": [
+        "flow_control",
+        "go_back_n",
+        "receiver_window"
+      ]
+    },
+    {
+      "id": "Q203",
+      "topic": "flow_control_arq",
+      "question": "If m bits are used for frame sequence numbers in Go-Back-N ARQ, what is the maximum sender window size?",
+      "options": [
+        "2^m",
+        "m",
+        "2^(m - 1)",
+        "2^m - 1"
+      ],
+      "answer": 3,
+      "explanation": "To prevent ambiguity between new frames and retransmitted frames, the maximum sender window size in Go-Back-N ARQ is 2^m - 1.",
+      "difficulty": "medium",
+      "tags": [
+        "flow_control",
+        "go_back_n",
+        "sequence_numbers",
+        "formula"
+      ]
+    },
+    {
+      "id": "Q204",
+      "topic": "flow_control_arq",
+      "question": "In Selective Repeat ARQ using m sequence bits, what is the maximum window size for both sender and receiver?",
+      "options": [
+        "2^m - 1",
+        "2^m",
+        "2^(m - 1)",
+        "2^(m + 1)"
+      ],
+      "answer": 2,
+      "explanation": "In Selective Repeat ARQ, sender and receiver window sizes must not exceed 2^(m - 1) to avoid overlap between duplicate sequence numbers.",
+      "difficulty": "medium",
+      "tags": [
+        "flow_control",
+        "selective_repeat",
+        "window_size",
+        "formula"
+      ]
+    },
+    {
+      "id": "Q205",
+      "topic": "flow_control_arq",
+      "question": "Which ARQ protocol requires buffer storage at the receiver for out-of-order frames?",
+      "options": [
+        "Stop-and-Wait",
+        "Go-Back-N",
+        "Selective Repeat",
+        "Pure ALOHA"
+      ],
+      "answer": 2,
+      "explanation": "Selective Repeat ARQ buffers out-of-order error-free frames until missing frames are successfully retransmitted and received.",
+      "difficulty": "medium",
+      "tags": [
+        "flow_control",
+        "selective_repeat",
+        "receiver_buffer"
+      ]
+    },
+    {
+      "id": "Q206",
+      "topic": "flow_control_arq",
+      "question": "What type of acknowledgment scheme is predominantly used in Go-Back-N ARQ?",
+      "options": [
+        "Cumulative Acknowledgment",
+        "Negative Acknowledgment only",
+        "Individual Selective Acknowledgment",
+        "Bitwise Acknowledgment"
+      ],
+      "answer": 0,
+      "explanation": "Go-Back-N utilizes cumulative acknowledgments, where ACK n confirms the successful receipt of all frames up to and including frame n - 1.",
+      "difficulty": "medium",
+      "tags": [
+        "flow_control",
+        "go_back_n",
+        "cumulative_ack"
+      ]
+    },
+    {
+      "id": "Q207",
+      "topic": "flow_control_arq",
+      "question": "The technique of attaching an acknowledgment to an outgoing data frame is known as:",
+      "options": [
+        "Pipelining",
+        "Piggybacking",
+        "Multiplexing",
+        "Encapsulation"
+      ],
+      "answer": 1,
+      "explanation": "Piggybacking temporarily delays an acknowledgment so that it can be hooked onto the next outgoing data frame, optimizing bandwidth.",
+      "difficulty": "easy",
+      "tags": [
+        "flow_control",
+        "piggybacking",
+        "efficiency"
+      ]
+    },
+    {
+      "id": "Q208",
+      "topic": "flow_control_arq",
+      "question": "If 3 bits are used for sequence numbering, what is the maximum sender window size in Go-Back-N ARQ?",
+      "options": [
+        "8",
+        "3",
+        "4",
+        "7"
+      ],
+      "answer": 3,
+      "explanation": "With m = 3 bits, maximum sender window size in Go-Back-N is 2^3 - 1 = 8 - 1 = 7 frames.",
+      "difficulty": "easy",
+      "tags": [
+        "flow_control",
+        "go_back_n",
+        "calculation"
+      ]
+    },
+    {
+      "id": "Q209",
+      "topic": "flow_control_arq",
+      "question": "If 4 bits are used for sequence numbering, what is the maximum window size in Selective Repeat ARQ?",
+      "options": [
+        "15",
+        "16",
+        "8",
+        "4"
+      ],
+      "answer": 2,
+      "explanation": "With m = 4 bits, the maximum window size in Selective Repeat ARQ is 2^(4 - 1) = 2^3 = 8.",
+      "difficulty": "easy",
+      "tags": [
+        "flow_control",
+        "selective_repeat",
+        "calculation"
+      ]
+    },
+    {
+      "id": "Q210",
+      "topic": "flow_control_arq",
+      "question": "In Stop-and-Wait flow control, what causes the 'Silly Window Syndrome' if sender and receiver exchange tiny segments?",
+      "options": [
+        "High bandwidth-delay product",
+        "Data is generated or consumed in very small chunks, wasting header overhead",
+        "CRC generator polynomial degree mismatch",
+        "Router queue starvation"
+      ],
+      "answer": 1,
+      "explanation": "Silly Window Syndrome occurs when either the sender generates or the receiver advertises very small windows (e.g., 1 byte), resulting in high header overhead relative to payload.",
+      "difficulty": "hard",
+      "tags": [
+        "flow_control",
+        "silly_window_syndrome",
+        "tcp_optimization"
+      ]
+    },
+    {
+      "id": "Q211",
+      "topic": "flow_control_arq",
+      "question": "What is the primary purpose of Nagle's algorithm in TCP flow control?",
+      "options": [
+        "Prevent collision on half-duplex links",
+        "Ensure packet encryption across firewalls",
+        "Dynamically adjust router routing tables",
+        "Solve small-packet problem on sender side by buffering small writes until an ACK arrives"
+      ],
+      "answer": 3,
+      "explanation": "Nagle's algorithm delays sending small outgoing packets by accumulating data until a full MSS can be sent or until previous data is acknowledged.",
+      "difficulty": "hard",
+      "tags": [
+        "flow_control",
+        "nagles_algorithm",
+        "tcp_congestion"
+      ]
+    },
+    {
+      "id": "Q212",
+      "topic": "flow_control_arq",
+      "question": "Which mechanism prevents a deadlock when the TCP receiver advertises a Zero Window?",
+      "options": [
+        "TCP Keepalive Timer",
+        "TCP Persist Timer (Zero Window Probes)",
+        "TCP Retransmission Timer",
+        "TIME_WAIT Timer"
+      ],
+      "answer": 1,
+      "explanation": "When a zero window is advertised, the sender runs a persist timer that periodically sends 1-byte probe packets to prompt window updates and avoid deadlocks.",
+      "difficulty": "hard",
+      "tags": [
+        "flow_control",
+        "zero_window",
+        "persist_timer"
+      ]
+    },
+    {
+      "id": "Q213",
+      "topic": "flow_control_arq",
+      "question": "In Go-Back-N ARQ, if frames 0, 1, 2, 3, 4 are transmitted and frame 2 is lost in transit, which frames are retransmitted?",
+      "options": [
+        "Only frame 2",
+        "No frames are retransmitted",
+        "Frames 0, 1, 2, 3, 4",
+        "Frames 2, 3, and 4"
+      ],
+      "answer": 3,
+      "explanation": "Because the receiver in Go-Back-N accepts only sequentially ordered frames and discards out-of-order frames 3 and 4, the sender must retransmit frame 2 and all subsequent frames (2, 3, 4).",
+      "difficulty": "medium",
+      "tags": [
+        "flow_control",
+        "go_back_n",
+        "retransmission_behavior"
+      ]
+    },
+    {
+      "id": "Q214",
+      "topic": "flow_control_arq",
+      "question": "In Selective Repeat ARQ, if frames 0, 1, 2, 3, 4 are transmitted and frame 2 is lost in transit, which frames are retransmitted?",
+      "options": [
+        "Only frame 2",
+        "Frames 2, 3, and 4",
+        "Frames 0, 1, and 2",
+        "Frames 3 and 4 only"
+      ],
+      "answer": 0,
+      "explanation": "Selective Repeat buffers correctly received out-of-order frames (3 and 4), requiring retransmission of only the damaged or lost frame (frame 2).",
+      "difficulty": "easy",
+      "tags": [
+        "flow_control",
+        "selective_repeat",
+        "retransmission_behavior"
+      ]
+    },
+    {
+      "id": "Q215",
+      "topic": "flow_control_arq",
+      "question": "The transmission efficiency (utilization) of Stop-and-Wait protocol is given by:",
+      "options": [
+        "1 / (1 + 2a), where a = Propagation Time / Transmission Time",
+        "1 + 2a",
+        "(1 + 2a) / 1",
+        "2a / (1 + 2a)"
+      ],
+      "answer": 0,
+      "explanation": "Utilization in Stop-and-Wait is given by T_frame / (T_frame + 2 * T_prop) = 1 / (1 + 2a), where a = T_prop / T_frame.",
+      "difficulty": "hard",
+      "tags": [
+        "flow_control",
+        "stop_and_wait",
+        "efficiency_formula"
+      ]
+    },
+    {
+      "id": "Q216",
+      "topic": "networking_devices",
+      "question": "How many collision domains and broadcast domains does a standard 8-port Ethernet Hub have?",
+      "options": [
+        "8 collision domains, 1 broadcast domain",
+        "1 collision domain, 8 broadcast domains",
+        "1 collision domain, 1 broadcast domain",
+        "8 collision domains, 8 broadcast domains"
+      ],
+      "answer": 2,
+      "explanation": "A hub acts as a single shared wire (multiport repeater), creating exactly 1 collision domain and 1 broadcast domain across all ports.",
+      "difficulty": "easy",
+      "tags": [
+        "networking_devices",
+        "hub",
+        "collision_domain",
+        "broadcast_domain"
+      ]
+    },
+    {
+      "id": "Q217",
+      "topic": "networking_devices",
+      "question": "How many collision domains and broadcast domains are created by an unmanaged 16-port Layer-2 Switch?",
+      "options": [
+        "1 collision domain, 1 broadcast domain",
+        "1 collision domain, 16 broadcast domains",
+        "16 collision domains, 16 broadcast domains",
+        "16 collision domains, 1 broadcast domain"
+      ],
+      "answer": 3,
+      "explanation": "Each switch port represents an isolated collision domain, but all ports reside in a single shared broadcast domain by default (16 collision domains, 1 broadcast domain).",
+      "difficulty": "easy",
+      "tags": [
+        "networking_devices",
+        "switch",
+        "collision_domains",
+        "broadcast_domains"
+      ]
+    },
+    {
+      "id": "Q218",
+      "topic": "networking_devices",
+      "question": "How many broadcast domains are created by a 4-port Router with each port connected to a separate LAN?",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "answer": 2,
+      "explanation": "Routers block Layer-2 broadcasts; therefore, each active routed interface defines an independent broadcast domain, yielding 4 broadcast domains.",
+      "difficulty": "easy",
+      "tags": [
+        "networking_devices",
+        "router",
+        "broadcast_domain_count"
+      ]
+    },
+    {
+      "id": "Q219",
+      "topic": "networking_devices",
+      "question": "A network has 2 Routers, 3 Switches, and 2 Hubs connected together. Assuming each router interface connects to a separate network segment, how many broadcast domains exist if each router uses 2 interfaces connected to different switches?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "7"
+      ],
+      "answer": 2,
+      "explanation": "Broadcast domains are bounded by router interfaces. If 4 router interfaces connect to independent segments, there are 4 distinct broadcast domains.",
+      "difficulty": "medium",
+      "tags": [
+        "networking_devices",
+        "broadcast_domains",
+        "topology_analysis"
+      ]
+    },
+    {
+      "id": "Q220",
+      "topic": "networking_devices",
+      "question": "Which memory component is used by Layer-2 switches to store MAC-to-port mappings for fast frame forwarding?",
+      "options": [
+        "NVRAM",
+        "Flash memory",
+        "DRAM only",
+        "CAM (Content Addressable Memory)"
+      ],
+      "answer": 3,
+      "explanation": "Switches use Content Addressable Memory (CAM) tables to perform hardware-speed lookups of destination MAC addresses to corresponding outgoing ports.",
+      "difficulty": "medium",
+      "tags": [
+        "networking_devices",
+        "switch",
+        "cam_table",
+        "mac_address_table"
+      ]
+    },
+    {
+      "id": "Q221",
+      "topic": "networking_devices",
+      "question": "What action does a Layer-2 switch take when it receives a frame with an unknown destination unicast MAC address?",
+      "options": [
+        "Drops the frame immediately",
+        "Floods the frame out all ports except the receiving port",
+        "Sends an ICMP Host Unreachable message",
+        "Forwards it directly to the default gateway"
+      ],
+      "answer": 1,
+      "explanation": "When destination MAC is unknown (Unknown Unicast Flooding), the switch floods the frame across all ports in the VLAN except the ingress port.",
+      "difficulty": "medium",
+      "tags": [
+        "networking_devices",
+        "switch",
+        "flooding",
+        "unicast"
+      ]
+    },
+    {
+      "id": "Q222",
+      "topic": "networking_devices",
+      "question": "Which switching method checks the entire frame for errors using CRC before forwarding it?",
+      "options": [
+        "Cut-through switching",
+        "Fast-forward switching",
+        "Store-and-forward switching",
+        "Fragment-free switching"
+      ],
+      "answer": 2,
+      "explanation": "Store-and-forward switching buffers the entire frame, verifies the Frame Check Sequence (CRC), and discards corrupted frames before forwarding.",
+      "difficulty": "easy",
+      "tags": [
+        "networking_devices",
+        "switch",
+        "store_and_forward"
+      ]
+    },
+    {
+      "id": "Q223",
+      "topic": "networking_devices",
+      "question": "Which switching method reads only the destination MAC address (first 6 bytes) and starts forwarding immediately without error checking?",
+      "options": [
+        "Store-and-forward switching",
+        "Fragment-free switching",
+        "Adaptive switching",
+        "Cut-through (Fast-Forward) switching"
+      ],
+      "answer": 3,
+      "explanation": "Cut-through (Fast-Forward) switching achieves minimal latency by reading only the destination MAC address before immediately forwarding the frame.",
+      "difficulty": "medium",
+      "tags": [
+        "networking_devices",
+        "switch",
+        "cut_through"
+      ]
+    },
+    {
+      "id": "Q224",
+      "topic": "networking_devices",
+      "question": "Which switching method reads the first 64 bytes of a frame to eliminate collision fragments before forwarding?",
+      "options": [
+        "Store-and-forward",
+        "Cut-through",
+        "Fragment-free switching",
+        "Buffer switching"
+      ],
+      "answer": 2,
+      "explanation": "Fragment-free switching reads the first 64 bytes (the minimum Ethernet collision window size) to ensure the frame is not a runt/collision fragment.",
+      "difficulty": "medium",
+      "tags": [
+        "networking_devices",
+        "switch",
+        "fragment_free"
+      ]
+    },
+    {
+      "id": "Q225",
+      "topic": "networking_devices",
+      "question": "What is the primary function of a Repeater in a computer network?",
+      "options": [
+        "Filter traffic based on MAC addresses",
+        "Translate between network layer protocols",
+        "Regenerate and amplify attenuated physical signals to extend transmission distance",
+        "Prevent network broadcast storms"
+      ],
+      "answer": 2,
+      "explanation": "A repeater operates at Layer 1 to regenerate degraded electrical or optical signals, allowing cables to span greater physical distances.",
+      "difficulty": "easy",
+      "tags": [
+        "networking_devices",
+        "repeater",
+        "signal_regeneration"
+      ]
+    },
+    {
+      "id": "Q226",
+      "topic": "networking_devices",
+      "question": "Which networking device connects two different LAN segments and filters frames based on MAC addresses, operating essentially as a 2-port switch?",
+      "options": [
+        "Hub",
+        "Bridge",
+        "Repeater",
+        "Transceiver"
+      ],
+      "answer": 1,
+      "explanation": "A Bridge is a Layer-2 device that interconnects network segments and filters traffic by inspecting MAC addresses.",
+      "difficulty": "easy",
+      "tags": [
+        "networking_devices",
+        "bridge",
+        "layer_2"
+      ]
+    },
+    {
+      "id": "Q227",
+      "topic": "networking_devices",
+      "question": "Which protocol is utilized by switches to prevent switching loops in redundant topologies?",
+      "options": [
+        "RIP",
+        "OSPF",
+        "BGP",
+        "STP (Spanning Tree Protocol)"
+      ],
+      "answer": 3,
+      "explanation": "Spanning Tree Protocol (IEEE 802.1D) blocks redundant switch ports to create a loop-free logical topology while preserving physical redundancy.",
+      "difficulty": "easy",
+      "tags": [
+        "networking_devices",
+        "switch",
+        "stp",
+        "loop_prevention"
+      ]
+    },
+    {
+      "id": "Q228",
+      "topic": "networking_devices",
+      "question": "What technology allows network administrators to divide a physical switch into multiple logical broadcast domains?",
+      "options": [
+        "NAT",
+        "VLAN (Virtual Local Area Network)",
+        "VPN",
+        "Proxy ARP"
+      ],
+      "answer": 1,
+      "explanation": "VLANs segment a single physical switch into distinct logical broadcast domains, improving network security and reducing broadcast traffic.",
+      "difficulty": "easy",
+      "tags": [
+        "networking_devices",
+        "vlan",
+        "broadcast_domains"
+      ]
+    },
+    {
+      "id": "Q229",
+      "topic": "networking_devices",
+      "question": "Which IEEE standard defines VLAN tagging on Ethernet frames?",
+      "options": [
+        "IEEE 802.3",
+        "IEEE 802.11",
+        "IEEE 802.1Q",
+        "IEEE 802.15"
+      ],
+      "answer": 2,
+      "explanation": "IEEE 802.1Q is the industry standard for tagging frames with a 4-byte VLAN identification header across trunk links.",
+      "difficulty": "medium",
+      "tags": [
+        "networking_devices",
+        "vlan_tagging",
+        "ieee_802_1q"
+      ]
+    },
+    {
+      "id": "Q230",
+      "topic": "networking_devices",
+      "question": "Which device operates across all layers of the OSI model to translate between entirely incompatible communication protocols?",
+      "options": [
+        "Gateway",
+        "Router",
+        "Switch",
+        "Bridge"
+      ],
+      "answer": 0,
+      "explanation": "A Gateway operates across multiple OSI layers (including the Application layer) to translate protocols between dissimilar network architectures.",
+      "difficulty": "medium",
+      "tags": [
+        "networking_devices",
+        "gateway",
+        "protocol_translation"
+      ]
+    },
+    {
+      "id": "Q231",
+      "topic": "error_detection",
+      "question": "What is the primary limitation of simple parity checking for error detection?",
+      "options": [
+        "It cannot detect any single-bit errors",
+        "It cannot detect an even number of bit errors in the same block",
+        "It requires high computational overhead",
+        "It can only be computed in software"
+      ],
+      "answer": 1,
+      "explanation": "If an even number of bits (e.g., 2, 4, 6) are inverted, the total count of 1s retains the same parity, rendering the error undetectable.",
+      "difficulty": "medium",
+      "tags": [
+        "error_detection",
+        "parity_check",
+        "limitations"
+      ]
+    },
+    {
+      "id": "Q232",
+      "topic": "error_detection",
+      "question": "In an even parity system, what parity bit should be appended to the data word 1011001?",
+      "options": [
+        "0",
+        "1",
+        "Cannot be determined",
+        "Parity bit not needed"
+      ],
+      "answer": 0,
+      "explanation": "The data word 1011001 contains four 1s (an even number). To maintain an even number of 1s, an even parity bit of 0 is appended.",
+      "difficulty": "easy",
+      "tags": [
+        "error_detection",
+        "even_parity",
+        "calculation"
+      ]
+    },
+    {
+      "id": "Q233",
+      "topic": "error_detection",
+      "question": "In an odd parity system, what parity bit should be appended to the data word 1101011?",
+      "options": [
+        "1",
+        "Both 0 and 1",
+        "None",
+        "0"
+      ],
+      "answer": 3,
+      "explanation": "The data word 1101011 contains five 1s (which is already odd). Therefore, the appended parity bit must be 0 to keep the total count odd.",
+      "difficulty": "easy",
+      "tags": [
+        "error_detection",
+        "odd_parity",
+        "calculation"
+      ]
+    },
+    {
+      "id": "Q234",
+      "topic": "error_detection",
+      "question": "The Internet Checksum used in IPv4 and TCP is computed using:",
+      "options": [
+        "Two's complement addition",
+        "One's complement sum and one's complement of the sum",
+        "Bitwise XOR polynomial division",
+        "Modular multiplication"
+      ],
+      "answer": 1,
+      "explanation": "Internet checksum algorithms sum 16-bit words using ones' complement arithmetic and then take the ones' complement of the final sum.",
+      "difficulty": "medium",
+      "tags": [
+        "error_detection",
+        "internet_checksum",
+        "ones_complement"
+      ]
+    },
+    {
+      "id": "Q235",
+      "topic": "error_detection",
+      "question": "In Cyclic Redundancy Check (CRC), if the generator polynomial has degree r, how many check bits are appended to the data?",
+      "options": [
+        "r - 1",
+        "r",
+        "r + 1",
+        "2r"
+      ],
+      "answer": 1,
+      "explanation": "The number of CRC remainder bits appended to the data stream is exactly equal to the degree r of the generator polynomial.",
+      "difficulty": "medium",
+      "tags": [
+        "error_detection",
+        "crc",
+        "polynomial_degree"
+      ]
+    },
+    {
+      "id": "Q236",
+      "topic": "error_detection",
+      "question": "If a generator polynomial is G(x) = x³ + x + 1, what is the bit length of its binary representation?",
+      "options": [
+        "3 bits",
+        "5 bits",
+        "2 bits",
+        "4 bits"
+      ],
+      "answer": 3,
+      "explanation": "G(x) = 1*x³ + 0*x² + 1*x¹ + 1*x⁰, which translates to binary 1011 (a 4-bit divisor).",
+      "difficulty": "easy",
+      "tags": [
+        "error_detection",
+        "crc",
+        "polynomial_representation"
+      ]
+    },
+    {
+      "id": "Q237",
+      "topic": "error_detection",
+      "question": "In CRC error checking at the receiver, what remainder must be obtained after dividing the received frame by the generator polynomial to indicate no error?",
+      "options": [
+        "0",
+        "1",
+        "Equal to generator polynomial",
+        "Degree of polynomial"
+      ],
+      "answer": 0,
+      "explanation": "If no transmission error occurred, dividing the received message (data plus appended CRC) by the generator polynomial leaves a remainder of exactly 0.",
+      "difficulty": "easy",
+      "tags": [
+        "error_detection",
+        "crc",
+        "receiver_verification"
+      ]
+    },
+    {
+      "id": "Q238",
+      "topic": "error_detection",
+      "question": "What is the Hamming distance between the two code words 10101 and 11110?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "explanation": "Comparing bit by bit: bit 2 differs (0 vs 1), bit 4 differs (0 vs 1), and bit 5 differs (1 vs 0). Exactly 3 bits differ, so Hamming distance = 3.",
+      "difficulty": "medium",
+      "tags": [
+        "error_detection",
+        "hamming_distance",
+        "calculation"
+      ]
+    },
+    {
+      "id": "Q239",
+      "topic": "error_detection",
+      "question": "To detect d single-bit errors in all cases, what minimum Hamming distance (d_min) is required between valid code words?",
+      "options": [
+        "d",
+        "d + 1",
+        "2d",
+        "2d + 1"
+      ],
+      "answer": 1,
+      "explanation": "To detect up to d bit errors, the minimum Hamming distance between any pair of valid codewords must satisfy d_min >= d + 1.",
+      "difficulty": "medium",
+      "tags": [
+        "error_detection",
+        "hamming_distance",
+        "error_detection_bound"
+      ]
+    },
+    {
+      "id": "Q240",
+      "topic": "error_detection",
+      "question": "To correct t single-bit errors in all cases, what minimum Hamming distance (d_min) is required?",
+      "options": [
+        "t + 1",
+        "2t",
+        "2t + 1",
+        "t²"
+      ],
+      "answer": 2,
+      "explanation": "To guarantee correction of up to t bit errors, the code words must have a minimum Hamming distance of at least 2t + 1.",
+      "difficulty": "medium",
+      "tags": [
+        "error_detection",
+        "hamming_code",
+        "error_correction_bound"
+      ]
+    },
+    {
+      "id": "Q241",
+      "topic": "error_detection",
+      "question": "If a coding scheme has a minimum Hamming distance of 5, what is the maximum number of errors it can reliably correct?",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "5"
+      ],
+      "answer": 1,
+      "explanation": "Using d_min >= 2t + 1: 5 >= 2t + 1 implies 2t <= 4, which yields t = 2 correctable errors.",
+      "difficulty": "medium",
+      "tags": [
+        "error_detection",
+        "hamming_distance",
+        "calculation"
+      ]
+    },
+    {
+      "id": "Q242",
+      "topic": "error_detection",
+      "question": "What is the relationship between the number of data bits m and parity bits r in a single-error-correcting Hamming code?",
+      "options": [
+        "2^r >= m + r + 1",
+        "2^r >= m + r",
+        "2^r <= m + r + 1",
+        "r >= m + 1"
+      ],
+      "answer": 0,
+      "explanation": "The Hamming inequality requires 2^r >= m + r + 1, ensuring enough unique states for each single-bit error position plus the no-error state.",
+      "difficulty": "hard",
+      "tags": [
+        "error_detection",
+        "hamming_code",
+        "hamming_rule",
+        "formula"
+      ]
+    },
+    {
+      "id": "Q243",
+      "topic": "error_detection",
+      "question": "If data consists of 4 bits (m = 4), how many parity bits r are required for a single-error-correcting Hamming code?",
+      "options": [
+        "2",
+        "5",
+        "4",
+        "3"
+      ],
+      "answer": 3,
+      "explanation": "Testing 2^r >= 4 + r + 1: For r = 2, 4 < 7 (false). For r = 3, 2^3 = 8 >= 4 + 3 + 1 = 8 (true). Thus, r = 3 parity bits are required (creating a (7, 4) Hamming code).",
+      "difficulty": "medium",
+      "tags": [
+        "error_detection",
+        "hamming_code",
+        "calculation"
+      ]
+    },
+    {
+      "id": "Q244",
+      "topic": "error_detection",
+      "question": "In a standard Hamming code, at which bit positions are the parity check bits located?",
+      "options": [
+        "Positions that are powers of 2 (1, 2, 4, 8, ...)",
+        "Odd bit positions (1, 3, 5, 7, ...)",
+        "Even bit positions (2, 4, 6, 8, ...)",
+        "At the very end of the code word"
+      ],
+      "answer": 0,
+      "explanation": "Parity bits are positioned at bit indices that are powers of 2 (1, 2, 4, 8, 16...), while data bits fill the remaining positions.",
+      "difficulty": "easy",
+      "tags": [
+        "error_detection",
+        "hamming_code",
+        "parity_positions"
+      ]
+    },
+    {
+      "id": "Q245",
+      "topic": "error_detection",
+      "question": "Which error detection method is best suited for detecting long burst errors in data link frames?",
+      "options": [
+        "Single-bit parity check",
+        "Two-dimensional parity",
+        "Cyclic Redundancy Check (CRC)",
+        "Checksum"
+      ],
+      "answer": 2,
+      "explanation": "CRC provides mathematical guarantees to detect all single-bit errors, double-bit errors, odd numbers of errors, and burst errors up to the polynomial length.",
+      "difficulty": "easy",
+      "tags": [
+        "error_detection",
+        "crc",
+        "burst_errors"
+      ]
+    },
+    {
+      "id": "Q246",
+      "topic": "transmission_media",
+      "question": "Why are copper wires twisted together in pairs in Unshielded Twisted Pair (UTP) cables?",
+      "options": [
+        "To increase physical cable flexibility",
+        "To reduce electromagnetic interference (EMI) and crosstalk between adjacent pairs",
+        "To increase high-voltage carrying capacity",
+        "To prevent optical dispersion"
+      ],
+      "answer": 1,
+      "explanation": "Twisting cancels out electromagnetic interference (EMI) from external sources and minimizes crosstalk between adjacent wire pairs.",
+      "difficulty": "easy",
+      "tags": [
+        "transmission_media",
+        "utp",
+        "crosstalk_reduction"
+      ]
+    },
+    {
+      "id": "Q247",
+      "topic": "transmission_media",
+      "question": "Which standard connector is commonly used with Category 5e and Category 6 twisted pair Ethernet cables?",
+      "options": [
+        "BNC",
+        "RJ-11",
+        "RJ-45",
+        "SC"
+      ],
+      "answer": 2,
+      "explanation": "Registered Jack 45 (RJ-45) is the standard 8-pin connector used for terminating twisted-pair Ethernet cables.",
+      "difficulty": "easy",
+      "tags": [
+        "transmission_media",
+        "rj_45",
+        "ethernet_connectors"
+      ]
+    },
+    {
+      "id": "Q248",
+      "topic": "transmission_media",
+      "question": "By which optical principle does light propagate through the core of a fiber optic cable?",
+      "options": [
+        "Light refraction",
+        "Total Internal Reflection",
+        "Diffraction",
+        "Polarization"
+      ],
+      "answer": 1,
+      "explanation": "Light remains trapped in the core through Total Internal Reflection because the core has a higher refractive index than the surrounding cladding.",
+      "difficulty": "easy",
+      "tags": [
+        "transmission_media",
+        "fiber_optic",
+        "total_internal_reflection"
+      ]
+    },
+    {
+      "id": "Q249",
+      "topic": "transmission_media",
+      "question": "Which type of fiber optic cable is best suited for long-distance telecommunications due to minimal modal dispersion?",
+      "options": [
+        "Single-mode fiber (SMF)",
+        "Multi-mode fiber (MMF)",
+        "Step-index multi-mode fiber",
+        "Plastic optical fiber"
+      ],
+      "answer": 0,
+      "explanation": "Single-mode fiber features a tiny core (~9 microns) through which light travels along a single path, eliminating modal dispersion and supporting long distances.",
+      "difficulty": "easy",
+      "tags": [
+        "transmission_media",
+        "single_mode_fiber",
+        "long_distance"
+      ]
+    },
+    {
+      "id": "Q250",
+      "topic": "transmission_media",
+      "question": "Which transmission medium is completely immune to electromagnetic interference (EMI) and radio frequency interference (RFI)?",
+      "options": [
+        "Coaxial cable",
+        "Shielded Twisted Pair (STP)",
+        "Unshielded Twisted Pair (UTP)",
+        "Fiber Optic Cable"
+      ],
+      "answer": 3,
+      "explanation": "Fiber optic cables transmit data as light pulses across glass/plastic fibers rather than electrical currents, making them completely immune to EMI and RFI.",
+      "difficulty": "easy",
+      "tags": [
+        "transmission_media",
+        "fiber_optic",
+        "emi_immunity"
+      ]
+    }
+  ]
+}

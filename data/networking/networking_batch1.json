@@ -1,0 +1,964 @@
+{
+  "dataset_id": "networking_mcq_batch_01_q001_q050",
+  "title": "Computer Networking MCQs (Batch 1: Q001 - Q050)",
+  "topics": {
+    "osi_model": "OSI Reference Model and Layer Functions",
+    "tcp_ip_model": "TCP/IP Protocol Suite and Architecture",
+    "transport_layer_protocols": "Transport Layer (TCP, UDP, and Handshake)",
+    "application_protocols": "Application Layer Protocols and Services",
+    "networking_devices": "Networking Devices and Collision/Broadcast Domains",
+    "network_diagnostics_arp": "Network Diagnostics, ICMP, and Address Resolution"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "topic": "osi_model",
+      "question": "Which layer of the OSI model is responsible for end-to-end delivery?",
+      "options": [
+        "Network",
+        "Transport",
+        "Session",
+        "Data Link"
+      ],
+      "answer": 1,
+      "explanation": "The Transport layer is responsible for end-to-end communication, flow control, and reliable data delivery between source and destination endpoints.",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "transport_layer",
+        "end_to_end"
+      ]
+    },
+    {
+      "id": "Q002",
+      "topic": "osi_model",
+      "question": "How many layers are there in the OSI reference model?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answer": 2,
+      "explanation": "The Open Systems Interconnection (OSI) reference model consists of exactly 7 layers.",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "layers",
+        "architecture"
+      ]
+    },
+    {
+      "id": "Q003",
+      "topic": "osi_model",
+      "question": "Which is the lowest layer of the OSI model?",
+      "options": [
+        "Physical",
+        "Data Link",
+        "Network",
+        "Transport"
+      ],
+      "answer": 0,
+      "explanation": "Layer 1, the Physical layer, is the lowest layer of the OSI reference model.",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "physical_layer",
+        "layer_hierarchy"
+      ]
+    },
+    {
+      "id": "Q004",
+      "topic": "osi_model",
+      "question": "Which layer is responsible for logical addressing?",
+      "options": [
+        "Data Link",
+        "Network",
+        "Transport",
+        "Session"
+      ],
+      "answer": 1,
+      "explanation": "The Network layer (Layer 3) handles logical addressing, such as IP addressing, and path determination.",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "network_layer",
+        "logical_addressing"
+      ]
+    },
+    {
+      "id": "Q005",
+      "topic": "osi_model",
+      "question": "MAC address operates primarily at which OSI layer?",
+      "options": [
+        "Physical",
+        "Data Link",
+        "Network",
+        "Transport"
+      ],
+      "answer": 1,
+      "explanation": "Media Access Control (MAC) addresses are physical hardware addresses operating at the Data Link layer (Layer 2).",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "data_link_layer",
+        "mac_address"
+      ]
+    },
+    {
+      "id": "Q006",
+      "topic": "osi_model",
+      "question": "IP addressing belongs to which OSI layer?",
+      "options": [
+        "Transport",
+        "Network",
+        "Data Link",
+        "Session"
+      ],
+      "answer": 1,
+      "explanation": "Internet Protocol (IP) operates at the Network layer of the OSI model.",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "network_layer",
+        "ip_address"
+      ]
+    },
+    {
+      "id": "Q007",
+      "topic": "osi_model",
+      "question": "Which OSI layer provides services such as encryption and compression?",
+      "options": [
+        "Session",
+        "Presentation",
+        "Application",
+        "Transport"
+      ],
+      "answer": 1,
+      "explanation": "The Presentation layer (Layer 6) handles data syntax, formatting, compression, and encryption/decryption.",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "presentation_layer",
+        "encryption"
+      ]
+    },
+    {
+      "id": "Q008",
+      "topic": "osi_model",
+      "question": "Which layer establishes, manages, and terminates communication sessions?",
+      "options": [
+        "Transport",
+        "Network",
+        "Session",
+        "Presentation"
+      ],
+      "answer": 2,
+      "explanation": "The Session layer (Layer 5) is responsible for establishing, synchronizing, maintaining, and terminating dialog sessions between applications.",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "session_layer",
+        "session_management"
+      ]
+    },
+    {
+      "id": "Q009",
+      "topic": "osi_model",
+      "question": "Which layer directly provides network services to end-user applications?",
+      "options": [
+        "Session",
+        "Presentation",
+        "Application",
+        "Transport"
+      ],
+      "answer": 2,
+      "explanation": "The Application layer (Layer 7) directly interfaces with software applications to provide network communication services.",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "application_layer",
+        "end_user"
+      ]
+    },
+    {
+      "id": "Q010",
+      "topic": "osi_model",
+      "question": "What is the PDU of the Network layer?",
+      "options": [
+        "Frame",
+        "Packet",
+        "Segment",
+        "Bit"
+      ],
+      "answer": 1,
+      "explanation": "The Protocol Data Unit (PDU) at the Network layer is referred to as a Packet.",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "network_layer",
+        "pdu"
+      ]
+    },
+    {
+      "id": "Q011",
+      "topic": "osi_model",
+      "question": "What is the PDU of the Data Link layer?",
+      "options": [
+        "Packet",
+        "Segment",
+        "Frame",
+        "Bit"
+      ],
+      "answer": 2,
+      "explanation": "The Protocol Data Unit (PDU) at the Data Link layer is a Frame.",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "data_link_layer",
+        "pdu"
+      ]
+    },
+    {
+      "id": "Q012",
+      "topic": "osi_model",
+      "question": "What is the PDU of the Physical layer?",
+      "options": [
+        "Frame",
+        "Packet",
+        "Bit",
+        "Segment"
+      ],
+      "answer": 2,
+      "explanation": "At the Physical layer, data is handled as raw bits transmitted over a physical communication medium.",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "physical_layer",
+        "pdu"
+      ]
+    },
+    {
+      "id": "Q013",
+      "topic": "osi_model",
+      "question": "TCP operates at which OSI layer?",
+      "options": [
+        "Network",
+        "Transport",
+        "Session",
+        "Data Link"
+      ],
+      "answer": 1,
+      "explanation": "Transmission Control Protocol (TCP) operates at the Transport layer (Layer 4) of the OSI model.",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "transport_layer",
+        "tcp"
+      ]
+    },
+    {
+      "id": "Q014",
+      "topic": "networking_devices",
+      "question": "Which device primarily operates at the Network layer?",
+      "options": [
+        "Hub",
+        "Switch",
+        "Router",
+        "Repeater"
+      ],
+      "answer": 2,
+      "explanation": "Routers operate at Layer 3 (Network layer), making forwarding decisions based on logical IP addresses.",
+      "difficulty": "easy",
+      "tags": [
+        "networking_devices",
+        "router",
+        "network_layer"
+      ]
+    },
+    {
+      "id": "Q015",
+      "topic": "networking_devices",
+      "question": "Which device primarily operates at the Data Link layer?",
+      "options": [
+        "Router",
+        "Layer-2 Switch",
+        "Repeater",
+        "Hub"
+      ],
+      "answer": 1,
+      "explanation": "A standard Layer-2 switch operates at the Data Link layer, filtering and forwarding frames based on MAC addresses.",
+      "difficulty": "easy",
+      "tags": [
+        "networking_devices",
+        "switch",
+        "data_link_layer"
+      ]
+    },
+    {
+      "id": "Q016",
+      "topic": "networking_devices",
+      "question": "Which device operates at the Physical layer?",
+      "options": [
+        "Router",
+        "Switch",
+        "Hub",
+        "Gateway"
+      ],
+      "answer": 2,
+      "explanation": "A hub is a Layer 1 (Physical layer) device that regenerates signals and broadcasts them to all ports without filtering.",
+      "difficulty": "easy",
+      "tags": [
+        "networking_devices",
+        "hub",
+        "physical_layer"
+      ]
+    },
+    {
+      "id": "Q017",
+      "topic": "osi_model",
+      "question": "Which layer is responsible for error detection using mechanisms such as CRC?",
+      "options": [
+        "Physical",
+        "Data Link",
+        "Network",
+        "Transport"
+      ],
+      "answer": 1,
+      "explanation": "The Data Link layer encapsulates data into frames and appends a Frame Check Sequence (FCS) using CRC for error detection.",
+      "difficulty": "medium",
+      "tags": [
+        "osi_model",
+        "data_link_layer",
+        "crc"
+      ]
+    },
+    {
+      "id": "Q018",
+      "topic": "osi_model",
+      "question": "Which layer is responsible for flow control and reliable delivery between endpoints?",
+      "options": [
+        "Transport",
+        "Network",
+        "Data Link",
+        "Session"
+      ],
+      "answer": 0,
+      "explanation": "The Transport layer provides end-to-end flow control, error recovery, and reliable transmission between communicating hosts.",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "transport_layer",
+        "flow_control"
+      ]
+    },
+    {
+      "id": "Q019",
+      "topic": "osi_model",
+      "question": "Which layer converts data into a format that different systems can understand?",
+      "options": [
+        "Session",
+        "Presentation",
+        "Application",
+        "Network"
+      ],
+      "answer": 1,
+      "explanation": "The Presentation layer ensures interoperability by formatting, translating, and encoding data between heterogeneous systems.",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "presentation_layer",
+        "syntax"
+      ]
+    },
+    {
+      "id": "Q020",
+      "topic": "application_protocols",
+      "question": "Which of the following is an example of an Application-layer protocol?",
+      "options": [
+        "IP",
+        "TCP",
+        "HTTP",
+        "Ethernet"
+      ],
+      "answer": 2,
+      "explanation": "Hypertext Transfer Protocol (HTTP) is an Application-layer protocol used for distributed, collaborative, hypermedia systems.",
+      "difficulty": "easy",
+      "tags": [
+        "application_layer",
+        "http",
+        "protocols"
+      ]
+    },
+    {
+      "id": "Q021",
+      "topic": "osi_model",
+      "question": "Which OSI layer is responsible for routing?",
+      "options": [
+        "Transport",
+        "Network",
+        "Data Link",
+        "Physical"
+      ],
+      "answer": 1,
+      "explanation": "Routing, or determining the optimal path for packets across interconnected networks, is performed at the Network layer.",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "network_layer",
+        "routing"
+      ]
+    },
+    {
+      "id": "Q022",
+      "topic": "osi_model",
+      "question": "Which layer uses port numbers?",
+      "options": [
+        "Network",
+        "Transport",
+        "Data Link",
+        "Session"
+      ],
+      "answer": 1,
+      "explanation": "Port numbers are used at the Transport layer to identify specific processes and applications running on host systems.",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "transport_layer",
+        "port_numbers"
+      ]
+    },
+    {
+      "id": "Q023",
+      "topic": "osi_model",
+      "question": "Which layer is responsible for framing?",
+      "options": [
+        "Physical",
+        "Data Link",
+        "Network",
+        "Transport"
+      ],
+      "answer": 1,
+      "explanation": "Framing—grouping bits into distinct, structured data units called frames—is a primary function of the Data Link layer.",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "data_link_layer",
+        "framing"
+      ]
+    },
+    {
+      "id": "Q024",
+      "topic": "osi_model",
+      "question": "Which sequence correctly represents the OSI layers from top to bottom?",
+      "options": [
+        "Application → Presentation → Session → Transport → Network → Data Link → Physical",
+        "Application → Session → Presentation → Transport → Network → Data Link → Physical",
+        "Presentation → Application → Session → Transport → Network → Physical → Data Link",
+        "Application → Presentation → Transport → Session → Network → Data Link → Physical"
+      ],
+      "answer": 0,
+      "explanation": "From Layer 7 down to Layer 1, the order is Application, Presentation, Session, Transport, Network, Data Link, and Physical.",
+      "difficulty": "medium",
+      "tags": [
+        "osi_model",
+        "layer_hierarchy",
+        "architecture"
+      ]
+    },
+    {
+      "id": "Q025",
+      "topic": "osi_model",
+      "question": "Which layer is closest to the user?",
+      "options": [
+        "Physical",
+        "Data Link",
+        "Application",
+        "Transport"
+      ],
+      "answer": 2,
+      "explanation": "The Application layer is Layer 7, the topmost layer that interacts directly with human users and software applications.",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "application_layer",
+        "end_user"
+      ]
+    },
+    {
+      "id": "Q026",
+      "topic": "osi_model",
+      "question": "Which layer is responsible for converting data into signals?",
+      "options": [
+        "Physical",
+        "Data Link",
+        "Network",
+        "Presentation"
+      ],
+      "answer": 0,
+      "explanation": "The Physical layer encodes binary bit streams into physical electrical, optical, or radio signals for transmission.",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "physical_layer",
+        "signals"
+      ]
+    },
+    {
+      "id": "Q027",
+      "topic": "osi_model",
+      "question": "Which addressing is associated with the Data Link layer?",
+      "options": [
+        "Port address",
+        "IP address",
+        "MAC address",
+        "URL"
+      ],
+      "answer": 2,
+      "explanation": "MAC addresses (physical hardware addresses) operate at Layer 2 (Data Link layer).",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "data_link_layer",
+        "mac_address"
+      ]
+    },
+    {
+      "id": "Q028",
+      "topic": "osi_model",
+      "question": "Which addressing is associated with the Transport layer?",
+      "options": [
+        "MAC address",
+        "IP address",
+        "Port number",
+        "Physical address"
+      ],
+      "answer": 2,
+      "explanation": "Transport-layer addressing relies on 16-bit port numbers to distinguish process-level communication sessions.",
+      "difficulty": "easy",
+      "tags": [
+        "osi_model",
+        "transport_layer",
+        "port_number"
+      ]
+    },
+    {
+      "id": "Q029",
+      "topic": "osi_model",
+      "question": "If a router receives an IP packet and determines the next hop, which OSI layer is mainly involved?",
+      "options": [
+        "Data Link",
+        "Network",
+        "Transport",
+        "Session"
+      ],
+      "answer": 1,
+      "explanation": "Path selection and next-hop forwarding based on IP destination addresses occur primarily at the Network layer.",
+      "difficulty": "medium",
+      "tags": [
+        "osi_model",
+        "network_layer",
+        "router"
+      ]
+    },
+    {
+      "id": "Q030",
+      "topic": "osi_model",
+      "question": "Which OSI layer is responsible for synchronization and dialog control?",
+      "options": [
+        "Presentation",
+        "Session",
+        "Transport",
+        "Application"
+      ],
+      "answer": 1,
+      "explanation": "The Session layer establishes checkpoints, synchronization points, and controls half-duplex or full-duplex dialogs.",
+      "difficulty": "medium",
+      "tags": [
+        "osi_model",
+        "session_layer",
+        "dialog_control"
+      ]
+    },
+    {
+      "id": "Q031",
+      "topic": "tcp_ip_model",
+      "question": "How many layers are there in the traditional TCP/IP model?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "7"
+      ],
+      "answer": 1,
+      "explanation": "The original TCP/IP protocol suite specifies 4 layers: Application, Transport, Internet, and Network Access.",
+      "difficulty": "easy",
+      "tags": [
+        "tcp_ip_model",
+        "layers",
+        "architecture"
+      ]
+    },
+    {
+      "id": "Q032",
+      "topic": "tcp_ip_model",
+      "question": "Which is the lowest layer of the TCP/IP model?",
+      "options": [
+        "Internet",
+        "Transport",
+        "Application",
+        "Network Access"
+      ],
+      "answer": 3,
+      "explanation": "The Network Access layer (also called Link or Network Interface layer) is the lowest layer in the 4-layer TCP/IP model.",
+      "difficulty": "easy",
+      "tags": [
+        "tcp_ip_model",
+        "network_access",
+        "layers"
+      ]
+    },
+    {
+      "id": "Q033",
+      "topic": "tcp_ip_model",
+      "question": "Which layer of the TCP/IP model is responsible for routing packets across networks?",
+      "options": [
+        "Application",
+        "Transport",
+        "Internet",
+        "Network Access"
+      ],
+      "answer": 2,
+      "explanation": "The Internet layer of TCP/IP handles logical packet routing and internetwork communication using IP.",
+      "difficulty": "easy",
+      "tags": [
+        "tcp_ip_model",
+        "internet_layer",
+        "routing"
+      ]
+    },
+    {
+      "id": "Q034",
+      "topic": "tcp_ip_model",
+      "question": "Which protocol operates at the Internet layer of TCP/IP?",
+      "options": [
+        "TCP",
+        "IP",
+        "HTTP",
+        "Ethernet"
+      ],
+      "answer": 1,
+      "explanation": "Internet Protocol (IP) is the core protocol operating at the Internet layer of the TCP/IP suite.",
+      "difficulty": "easy",
+      "tags": [
+        "tcp_ip_model",
+        "internet_layer",
+        "ip"
+      ]
+    },
+    {
+      "id": "Q035",
+      "topic": "tcp_ip_model",
+      "question": "Which layer of the TCP/IP model corresponds approximately to the OSI Network layer?",
+      "options": [
+        "Application",
+        "Transport",
+        "Internet",
+        "Network Access"
+      ],
+      "answer": 2,
+      "explanation": "The Internet layer of the TCP/IP model directly corresponds to Layer 3 (Network layer) of the OSI model.",
+      "difficulty": "easy",
+      "tags": [
+        "tcp_ip_model",
+        "osi_comparison",
+        "internet_layer"
+      ]
+    },
+    {
+      "id": "Q036",
+      "topic": "transport_layer_protocols",
+      "question": "Which protocol provides reliable, connection-oriented communication?",
+      "options": [
+        "UDP",
+        "IP",
+        "TCP",
+        "ICMP"
+      ],
+      "answer": 2,
+      "explanation": "TCP establishes a logical connection via handshaking, provides sequencing, flow control, acknowledgments, and retransmission of lost packets.",
+      "difficulty": "easy",
+      "tags": [
+        "tcp",
+        "connection_oriented",
+        "reliability"
+      ]
+    },
+    {
+      "id": "Q037",
+      "topic": "transport_layer_protocols",
+      "question": "Which protocol is connectionless and provides no guarantee of delivery?",
+      "options": [
+        "TCP",
+        "UDP",
+        "HTTP",
+        "FTP"
+      ],
+      "answer": 1,
+      "explanation": "User Datagram Protocol (UDP) is a connectionless transport protocol providing best-effort transmission without delivery guarantees.",
+      "difficulty": "easy",
+      "tags": [
+        "udp",
+        "connectionless",
+        "best_effort"
+      ]
+    },
+    {
+      "id": "Q038",
+      "topic": "transport_layer_protocols",
+      "question": "Which layer uses port numbers to identify applications?",
+      "options": [
+        "Internet",
+        "Transport",
+        "Network Access",
+        "Application"
+      ],
+      "answer": 1,
+      "explanation": "The Transport layer uses 16-bit source and destination port numbers to multiplex and deliver data to specific applications.",
+      "difficulty": "easy",
+      "tags": [
+        "transport_layer",
+        "port_numbers",
+        "addressing"
+      ]
+    },
+    {
+      "id": "Q039",
+      "topic": "network_diagnostics_arp",
+      "question": "Which protocol is primarily used to report IP-level errors and diagnostic information?",
+      "options": [
+        "ARP",
+        "ICMP",
+        "TCP",
+        "FTP"
+      ],
+      "answer": 1,
+      "explanation": "Internet Control Message Protocol (ICMP) is used by network devices to send error messages and operational diagnostics.",
+      "difficulty": "easy",
+      "tags": [
+        "icmp",
+        "diagnostics",
+        "error_reporting"
+      ]
+    },
+    {
+      "id": "Q040",
+      "topic": "network_diagnostics_arp",
+      "question": "Which protocol maps an IPv4 address to a MAC address in a local network?",
+      "options": [
+        "DNS",
+        "DHCP",
+        "ARP",
+        "ICMP"
+      ],
+      "answer": 2,
+      "explanation": "Address Resolution Protocol (ARP) translates known Layer 3 IPv4 addresses into corresponding Layer 2 MAC addresses on a local subnet.",
+      "difficulty": "easy",
+      "tags": [
+        "arp",
+        "address_resolution",
+        "mac_address"
+      ]
+    },
+    {
+      "id": "Q041",
+      "topic": "application_protocols",
+      "question": "Which protocol automatically assigns IP configuration to hosts?",
+      "options": [
+        "DNS",
+        "DHCP",
+        "HTTP",
+        "ARP"
+      ],
+      "answer": 1,
+      "explanation": "Dynamic Host Configuration Protocol (DHCP) automatically assigns IP addresses, subnet masks, default gateways, and DNS servers to client devices.",
+      "difficulty": "easy",
+      "tags": [
+        "dhcp",
+        "ip_assignment",
+        "configuration"
+      ]
+    },
+    {
+      "id": "Q042",
+      "topic": "application_protocols",
+      "question": "Which protocol translates domain names into IP addresses?",
+      "options": [
+        "FTP",
+        "DNS",
+        "DHCP",
+        "SMTP"
+      ],
+      "answer": 1,
+      "explanation": "Domain Name System (DNS) is an application-layer service that translates human-readable domain names into numerical IP addresses.",
+      "difficulty": "easy",
+      "tags": [
+        "dns",
+        "domain_resolution",
+        "name_service"
+      ]
+    },
+    {
+      "id": "Q043",
+      "topic": "application_protocols",
+      "question": "Which of the following belongs to the Application layer of the TCP/IP model?",
+      "options": [
+        "IP",
+        "TCP",
+        "HTTP",
+        "Ethernet"
+      ],
+      "answer": 2,
+      "explanation": "HTTP is an Application-layer protocol; TCP is Transport, IP is Internet, and Ethernet is Network Access.",
+      "difficulty": "easy",
+      "tags": [
+        "tcp_ip_model",
+        "application_layer",
+        "http"
+      ]
+    },
+    {
+      "id": "Q044",
+      "topic": "tcp_ip_model",
+      "question": "What is the correct TCP/IP encapsulation order from Application to Network Access?",
+      "options": [
+        "Data → Segment → Packet → Frame",
+        "Data → Packet → Segment → Frame",
+        "Segment → Data → Packet → Frame",
+        "Data → Frame → Packet → Segment"
+      ],
+      "answer": 0,
+      "explanation": "During transmission encapsulation, Application Data is encapsulated into a Transport Segment, then an Internet Packet, and finally a Network Access Frame.",
+      "difficulty": "medium",
+      "tags": [
+        "tcp_ip_model",
+        "encapsulation",
+        "pdu"
+      ]
+    },
+    {
+      "id": "Q045",
+      "topic": "transport_layer_protocols",
+      "question": "What is the PDU at the Transport layer when TCP is used?",
+      "options": [
+        "Packet",
+        "Frame",
+        "Segment",
+        "Bit"
+      ],
+      "answer": 2,
+      "explanation": "When TCP is used at the Transport layer, the Protocol Data Unit (PDU) is termed a Segment.",
+      "difficulty": "easy",
+      "tags": [
+        "transport_layer",
+        "tcp",
+        "segment"
+      ]
+    },
+    {
+      "id": "Q045",
+      "topic": "tcp_ip_model",
+      "question": "What is the PDU commonly associated with the Internet layer?",
+      "options": [
+        "Segment",
+        "Packet",
+        "Frame",
+        "Data"
+      ],
+      "answer": 1,
+      "explanation": "The PDU handled at the Internet layer (and OSI Network layer) is the Packet.",
+      "difficulty": "easy",
+      "tags": [
+        "tcp_ip_model",
+        "internet_layer",
+        "packet"
+      ]
+    },
+    {
+      "id": "Q047",
+      "topic": "transport_layer_protocols",
+      "question": "Which protocol uses a three-way handshake to establish a connection?",
+      "options": [
+        "UDP",
+        "IP",
+        "TCP",
+        "ICMP"
+      ],
+      "answer": 2,
+      "explanation": "TCP establishes reliable connections between client and server via a three-way handshake using SYN, SYN-ACK, and ACK packets.",
+      "difficulty": "easy",
+      "tags": [
+        "tcp",
+        "three_way_handshake",
+        "connection_setup"
+      ]
+    },
+    {
+      "id": "Q048",
+      "topic": "tcp_ip_model",
+      "question": "A host sends data to another network. Which TCP/IP layer determines the logical path using IP addressing?",
+      "options": [
+        "Application",
+        "Transport",
+        "Internet",
+        "Network Access"
+      ],
+      "answer": 2,
+      "explanation": "The Internet layer evaluates IP addressing to determine routing paths across interconnected networks.",
+      "difficulty": "medium",
+      "tags": [
+        "tcp_ip_model",
+        "internet_layer",
+        "path_determination"
+      ]
+    },
+    {
+      "id": "Q049",
+      "topic": "tcp_ip_model",
+      "question": "Which TCP/IP layer combines the functions of the OSI Session, Presentation, and Application layers?",
+      "options": [
+        "Internet",
+        "Transport",
+        "Application",
+        "Network Access"
+      ],
+      "answer": 2,
+      "explanation": "In the 4-layer TCP/IP architectural model, the single Application layer encompasses the duties of the OSI Application, Presentation, and Session layers.",
+      "difficulty": "medium",
+      "tags": [
+        "tcp_ip_model",
+        "osi_comparison",
+        "application_layer"
+      ]
+    },
+    {
+      "id": "Q050",
+      "topic": "tcp_ip_model",
+      "question": "Which statement correctly distinguishes TCP from IP?",
+      "options": [
+        "TCP provides logical addressing, while IP provides encryption",
+        "TCP provides reliable transport, while IP provides packet delivery/routing",
+        "TCP works at the Internet layer, while IP works at the Application layer",
+        "TCP is connectionless, while IP is connection-oriented"
+      ],
+      "answer": 1,
+      "explanation": "TCP operates at the transport layer to provide reliable, connection-oriented data delivery, whereas IP operates at the internet layer providing addressing and packet routing.",
+      "difficulty": "medium",
+      "tags": [
+        "tcp_ip_model",
+        "tcp",
+        "ip"
+      ]
+    }
+  ]
+}

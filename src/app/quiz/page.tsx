@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useState, useMemo, useRef, Suspense } from 'react';
+import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import {
   Sparkles,
@@ -22,6 +23,7 @@ import {
   Star,
   Flame,
   ShieldAlert,
+  BookOpen,
 } from 'lucide-react';
 import {
   Dataset,
@@ -1026,17 +1028,29 @@ function QuizPageContent() {
       )}
 
       {/* Header */}
-      <div className="mb-6">
-        <div className="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-400 ring-1 ring-emerald-500/30 mb-2">
-          <Sliders className="h-3.5 w-3.5" />
-          <span>Interactive Exam Configuration & Smart Drills</span>
+      <div className="mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <div>
+          <div className="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-400 ring-1 ring-emerald-500/30 mb-2">
+            <Sliders className="h-3.5 w-3.5" />
+            <span>Interactive Exam Configuration & Smart Drills</span>
+          </div>
+          <h1 className="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">
+            Configure Your Smart Quiz
+          </h1>
+          <p className="mt-1 text-sm text-slate-400">
+            Pick a 1-click preset below, or customize subjects, timer mode, and negative marking.
+          </p>
         </div>
-        <h1 className="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">
-          Configure Your Smart Quiz
-        </h1>
-        <p className="mt-1 text-sm text-slate-400">
-          Pick a 1-click preset below, or customize subjects, timer mode, and negative marking.
-        </p>
+
+        <Link
+          href={`/reading?datasetId=${selectedDatasetId}&subject=${selectedSubject}${
+            selectedTopics.length > 0 ? `&topic=${selectedTopics[0]}` : ''
+          }`}
+          className="inline-flex items-center gap-2 rounded-xl border border-emerald-500/30 bg-emerald-950/40 px-4 py-2.5 text-xs font-semibold text-emerald-300 hover:bg-emerald-900/60 hover:text-white transition-colors shrink-0 self-start sm:self-center"
+        >
+          <BookOpen className="h-4 w-4 text-emerald-400" />
+          <span>Switch to Reading Mode &rarr;</span>
+        </Link>
       </div>
 
       {/* 1-Click Smart Exam Presets & Vaults */}

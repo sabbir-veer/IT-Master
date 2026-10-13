@@ -1,0 +1,968 @@
+{
+  "dataset_id": "networking_mcq_batch_04_q151_q200",
+  "title": "Computer Networking MCQs (Batch 4: Q151 - Q200)",
+  "topics": {
+    "application_protocols": "Application Layer Protocols and Services",
+    "network_management_snmp": "Network Management and Monitoring (SNMP)",
+    "routing_protocols": "Routing Protocols (OSPF, RIP, EIGRP, BGP)",
+    "network_diagnostics_icmp": "Network Diagnostics and Error Reporting (ICMP)",
+    "network_diagnostics_arp": "Address Resolution Protocol (ARP)"
+  },
+  "questions": [
+    {
+      "id": "Q151",
+      "topic": "application_protocols",
+      "question": "Which protocol is primarily used for sending email between mail servers?",
+      "options": [
+        "POP3",
+        "SMTP",
+        "HTTP",
+        "FTP"
+      ],
+      "answer": 1,
+      "explanation": "Simple Mail Transfer Protocol (SMTP) is the standard push protocol used for sending and relaying emails between mail servers.",
+      "difficulty": "easy",
+      "tags": [
+        "application_protocols",
+        "smtp",
+        "email_sending"
+      ]
+    },
+    {
+      "id": "Q152",
+      "topic": "application_protocols",
+      "question": "Which protocol is primarily used by an email client to retrieve emails from a mail server?",
+      "options": [
+        "SMTP",
+        "POP3",
+        "HTTP",
+        "DNS"
+      ],
+      "answer": 1,
+      "explanation": "Post Office Protocol version 3 (POP3) is designed for email clients to download and retrieve messages from a mail server.",
+      "difficulty": "easy",
+      "tags": [
+        "application_protocols",
+        "pop3",
+        "email_retrieval"
+      ]
+    },
+    {
+      "id": "Q153",
+      "topic": "application_protocols",
+      "question": "What is the default port number for SMTP?",
+      "options": [
+        "21",
+        "25",
+        "53",
+        "110"
+      ],
+      "answer": 1,
+      "explanation": "Standard unencrypted SMTP server-to-server relay communication uses well-known TCP port 25.",
+      "difficulty": "easy",
+      "tags": [
+        "application_protocols",
+        "smtp",
+        "port_25"
+      ]
+    },
+    {
+      "id": "Q154",
+      "topic": "application_protocols",
+      "question": "What is the default port number for POP3?",
+      "options": [
+        "25",
+        "80",
+        "110",
+        "143"
+      ],
+      "answer": 2,
+      "explanation": "The standard port for unencrypted POP3 mail retrieval service is TCP port 110.",
+      "difficulty": "easy",
+      "tags": [
+        "application_protocols",
+        "pop3",
+        "port_110"
+      ]
+    },
+    {
+      "id": "Q155",
+      "topic": "application_protocols",
+      "question": "Which protocol is primarily used to transfer web pages between a web browser and a web server?",
+      "options": [
+        "SMTP",
+        "POP3",
+        "HTTP",
+        "DHCP"
+      ],
+      "answer": 2,
+      "explanation": "Hypertext Transfer Protocol (HTTP) is the foundational protocol used for transmitting web documents and resources across the World Wide Web.",
+      "difficulty": "easy",
+      "tags": [
+        "application_protocols",
+        "http",
+        "web_transfer"
+      ]
+    },
+    {
+      "id": "Q156",
+      "topic": "application_protocols",
+      "question": "What is the default port number of HTTP?",
+      "options": [
+        "25",
+        "53",
+        "80",
+        "443"
+      ],
+      "answer": 2,
+      "explanation": "Standard unencrypted HTTP web traffic listens on well-known TCP port 80.",
+      "difficulty": "easy",
+      "tags": [
+        "application_protocols",
+        "http",
+        "port_80"
+      ]
+    },
+    {
+      "id": "Q157",
+      "topic": "application_protocols",
+      "question": "What is the default port number of HTTPS?",
+      "options": [
+        "80",
+        "110",
+        "143",
+        "443"
+      ],
+      "answer": 3,
+      "explanation": "Hypertext Transfer Protocol Secure (HTTPS) operates over TLS/SSL on standard TCP port 443.",
+      "difficulty": "easy",
+      "tags": [
+        "application_protocols",
+        "https",
+        "port_443"
+      ]
+    },
+    {
+      "id": "Q158",
+      "topic": "application_protocols",
+      "question": "HTTPS is essentially HTTP combined with:",
+      "options": [
+        "FTP",
+        "TLS/SSL",
+        "DNS",
+        "DHCP"
+      ],
+      "answer": 1,
+      "explanation": "HTTPS consists of standard HTTP communication layered over an encrypted Transport Layer Security (TLS) or Secure Sockets Layer (SSL) tunnel.",
+      "difficulty": "easy",
+      "tags": [
+        "application_protocols",
+        "https",
+        "tls_ssl"
+      ]
+    },
+    {
+      "id": "Q159",
+      "topic": "application_protocols",
+      "question": "Which protocol provides encryption and authentication for HTTPS?",
+      "options": [
+        "ARP",
+        "TLS",
+        "DHCP",
+        "ICMP"
+      ],
+      "answer": 1,
+      "explanation": "Transport Layer Security (TLS) provides end-to-end data encryption, server authentication, and message integrity for HTTPS.",
+      "difficulty": "easy",
+      "tags": [
+        "application_protocols",
+        "tls",
+        "security"
+      ]
+    },
+    {
+      "id": "Q160",
+      "topic": "application_protocols",
+      "question": "Which is the modern successor to SSL for securing network communication?",
+      "options": [
+        "HTTP",
+        "TLS",
+        "POP3",
+        "SMTP"
+      ],
+      "answer": 1,
+      "explanation": "TLS (Transport Layer Security) was developed as the modern, more secure cryptographic successor to deprecated SSL protocols.",
+      "difficulty": "easy",
+      "tags": [
+        "application_protocols",
+        "tls",
+        "ssl_successor"
+      ]
+    },
+    {
+      "id": "Q161",
+      "topic": "application_protocols",
+      "question": "Which of the following is the most secure modern protocol version among these?",
+      "options": [
+        "SSL 2.0",
+        "SSL 3.0",
+        "TLS 1.0",
+        "TLS 1.3"
+      ],
+      "answer": 3,
+      "explanation": "TLS 1.3 is the latest, most secure cryptographic standard, featuring improved handshake efficiency and removing obsolete, vulnerable cipher suites.",
+      "difficulty": "easy",
+      "tags": [
+        "application_protocols",
+        "tls_1_3",
+        "cryptography"
+      ]
+    },
+    {
+      "id": "Q162",
+      "topic": "application_protocols",
+      "question": "Which technology is responsible for protecting HTTP traffic against eavesdropping and tampering in HTTPS?",
+      "options": [
+        "TLS",
+        "DNS",
+        "DHCP",
+        "ARP"
+      ],
+      "answer": 0,
+      "explanation": "TLS provides cryptographic privacy and integrity protection, preventing unauthorized interception, eavesdropping, and tampering.",
+      "difficulty": "easy",
+      "tags": [
+        "application_protocols",
+        "tls",
+        "traffic_protection"
+      ]
+    },
+    {
+      "id": "Q163",
+      "topic": "application_protocols",
+      "question": "Which SMTP port is commonly used for message submission with encryption such as STARTTLS?",
+      "options": [
+        "25",
+        "53",
+        "587",
+        "110"
+      ],
+      "answer": 2,
+      "explanation": "Port 587 is the standard submission port defined in RFC 6409 for mail clients to submit messages to an outgoing SMTP server using STARTTLS.",
+      "difficulty": "medium",
+      "tags": [
+        "application_protocols",
+        "smtp",
+        "port_587",
+        "starttls"
+      ]
+    },
+    {
+      "id": "Q164",
+      "topic": "application_protocols",
+      "question": "Which port is traditionally associated with SMTP over implicit TLS (SMTPS)?",
+      "options": [
+        "25",
+        "465",
+        "587",
+        "993"
+      ],
+      "answer": 1,
+      "explanation": "Port 465 was originally assigned and is widely utilized for secure email submission using implicit TLS (SMTPS).",
+      "difficulty": "medium",
+      "tags": [
+        "application_protocols",
+        "smtps",
+        "port_465"
+      ]
+    },
+    {
+      "id": "Q165",
+      "topic": "application_protocols",
+      "question": "Which port is used by POP3 over implicit TLS?",
+      "options": [
+        "110",
+        "143",
+        "443",
+        "995"
+      ],
+      "answer": 3,
+      "explanation": "POP3S (POP3 over SSL/TLS) connects securely to mail servers over dedicated TCP port 995.",
+      "difficulty": "medium",
+      "tags": [
+        "application_protocols",
+        "pop3s",
+        "port_995"
+      ]
+    },
+    {
+      "id": "Q166",
+      "topic": "application_protocols",
+      "question": "Which HTTP method is normally used to request a resource from a web server?",
+      "options": [
+        "GET",
+        "SEND",
+        "FETCH",
+        "RECEIVE"
+      ],
+      "answer": 0,
+      "explanation": "The HTTP GET method is designed to retrieve data or resources specified by a given URI from a web server.",
+      "difficulty": "easy",
+      "tags": [
+        "application_protocols",
+        "http_methods",
+        "get_request"
+      ]
+    },
+    {
+      "id": "Q167",
+      "topic": "application_protocols",
+      "question": "Which HTTP status code indicates that a requested resource was successfully retrieved?",
+      "options": [
+        "200",
+        "301",
+        "404",
+        "500"
+      ],
+      "answer": 0,
+      "explanation": "HTTP status code 200 OK indicates that the client's request succeeded and the requested payload is delivered.",
+      "difficulty": "easy",
+      "tags": [
+        "application_protocols",
+        "http_status_codes",
+        "200_ok"
+      ]
+    },
+    {
+      "id": "Q168",
+      "topic": "application_protocols",
+      "question": "Which HTTP status code indicates that the requested resource was not found?",
+      "options": [
+        "200",
+        "301",
+        "404",
+        "503"
+      ],
+      "answer": 2,
+      "explanation": "HTTP status code 404 Not Found signals that the server cannot locate the requested URI resource.",
+      "difficulty": "easy",
+      "tags": [
+        "application_protocols",
+        "http_status_codes",
+        "404_not_found"
+      ]
+    },
+    {
+      "id": "Q169",
+      "topic": "application_protocols",
+      "question": "Which statement about POP3 is correct?",
+      "options": [
+        "It is primarily used to send outgoing email",
+        "It is primarily used to retrieve email from a mail server",
+        "It is used to resolve domain names",
+        "It is used to transfer web pages"
+      ],
+      "answer": 1,
+      "explanation": "POP3 is an incoming mail protocol designed for client endpoints to retrieve and download emails from a remote mailbox server.",
+      "difficulty": "easy",
+      "tags": [
+        "application_protocols",
+        "pop3",
+        "email_retrieval"
+      ]
+    },
+    {
+      "id": "Q170",
+      "topic": "application_protocols",
+      "question": "Which statement correctly describes TLS?",
+      "options": [
+        "TLS is an email retrieval protocol",
+        "TLS provides security services such as encryption, authentication, and integrity",
+        "TLS assigns IP addresses to hosts",
+        "TLS translates domain names into IP addresses"
+      ],
+      "answer": 1,
+      "explanation": "Transport Layer Security (TLS) operates above the transport layer to provide confidentiality (encryption), authentication, and message integrity.",
+      "difficulty": "easy",
+      "tags": [
+        "application_protocols",
+        "tls",
+        "security_services"
+      ]
+    },
+    {
+      "id": "Q171",
+      "topic": "network_management_snmp",
+      "question": "Which protocol is primarily used for monitoring and managing network devices?",
+      "options": [
+        "ARP",
+        "SNMP",
+        "RIP",
+        "ICMP"
+      ],
+      "answer": 1,
+      "explanation": "Simple Network Management Protocol (SNMP) is widely used by network administrators to monitor, configure, and collect statistics from network hardware.",
+      "difficulty": "easy",
+      "tags": [
+        "snmp",
+        "network_management",
+        "monitoring"
+      ]
+    },
+    {
+      "id": "Q172",
+      "topic": "network_management_snmp",
+      "question": "Which port is commonly used by SNMP for receiving queries from a management system?",
+      "options": [
+        "53",
+        "80",
+        "161",
+        "443"
+      ],
+      "answer": 2,
+      "explanation": "SNMP agents listen on UDP port 161 for requests (Get, Set, GetNext) sent from the Network Management Station (NMS).",
+      "difficulty": "easy",
+      "tags": [
+        "snmp",
+        "port_161",
+        "agent_port"
+      ]
+    },
+    {
+      "id": "Q173",
+      "topic": "network_management_snmp",
+      "question": "Which port is commonly used by SNMP for sending traps to a management system?",
+      "options": [
+        "110",
+        "161",
+        "162",
+        "179"
+      ],
+      "answer": 2,
+      "explanation": "SNMP traps (unsolicited notifications generated by agents to alert managers of asynchronous events) are received on UDP port 162.",
+      "difficulty": "easy",
+      "tags": [
+        "snmp",
+        "port_162",
+        "snmp_traps"
+      ]
+    },
+    {
+      "id": "Q174",
+      "topic": "network_management_snmp",
+      "question": "Which SNMP component stores managed device information in a structured database?",
+      "options": [
+        "MIB",
+        "ARP",
+        "AS",
+        "TTL"
+      ],
+      "answer": 0,
+      "explanation": "Management Information Base (MIB) is a hierarchically structured database describing managed device objects and parameters referenced via OIDs.",
+      "difficulty": "easy",
+      "tags": [
+        "snmp",
+        "mib",
+        "management_database"
+      ]
+    },
+    {
+      "id": "Q175",
+      "topic": "routing_protocols",
+      "question": "Which protocol is a link-state interior gateway protocol (IGP)?",
+      "options": [
+        "RIP",
+        "OSPF",
+        "BGP",
+        "ARP"
+      ],
+      "answer": 1,
+      "explanation": "Open Shortest Path First (OSPF) is the primary open-standard link-state interior gateway protocol used within an Autonomous System.",
+      "difficulty": "easy",
+      "tags": [
+        "routing_protocols",
+        "ospf",
+        "link_state",
+        "igp"
+      ]
+    },
+    {
+      "id": "Q176",
+      "topic": "routing_protocols",
+      "question": "What algorithm is primarily used by OSPF to calculate the shortest path?",
+      "options": [
+        "Bellman-Ford",
+        "Dijkstra's algorithm",
+        "Floyd-Warshall",
+        "Prim's algorithm"
+      ],
+      "answer": 1,
+      "explanation": "OSPF constructs a complete network topology map and executes Dijkstra's Shortest Path First (SPF) algorithm to calculate loop-free shortest paths.",
+      "difficulty": "easy",
+      "tags": [
+        "routing_protocols",
+        "ospf",
+        "dijkstra",
+        "spf_algorithm"
+      ]
+    },
+    {
+      "id": "Q177",
+      "topic": "routing_protocols",
+      "question": "Which metric does OSPF primarily use to select the best path?",
+      "options": [
+        "Hop count",
+        "Cost",
+        "Bandwidth only",
+        "Delay only"
+      ],
+      "answer": 1,
+      "explanation": "OSPF uses 'Cost' as its metric, which is inversely proportional to link bandwidth (Cost = Reference Bandwidth / Interface Bandwidth).",
+      "difficulty": "easy",
+      "tags": [
+        "routing_protocols",
+        "ospf",
+        "cost_metric"
+      ]
+    },
+    {
+      "id": "Q178",
+      "topic": "routing_protocols",
+      "question": "Which OSPF packet type is used to discover and maintain neighbor relationships?",
+      "options": [
+        "Hello",
+        "Update",
+        "Query",
+        "Reply"
+      ],
+      "answer": 0,
+      "explanation": "OSPF Hello packets are periodically multicast between adjacent routers to discover neighbors, establish adjacencies, and monitor link availability.",
+      "difficulty": "easy",
+      "tags": [
+        "routing_protocols",
+        "ospf",
+        "hello_packet"
+      ]
+    },
+    {
+      "id": "Q179",
+      "topic": "routing_protocols",
+      "question": "Which protocol uses hop count as its primary routing metric?",
+      "options": [
+        "OSPF",
+        "EIGRP",
+        "RIP",
+        "BGP"
+      ],
+      "answer": 2,
+      "explanation": "Routing Information Protocol (RIP) uses simple hop count (number of intermediate routers) as its sole metric for selecting paths.",
+      "difficulty": "easy",
+      "tags": [
+        "routing_protocols",
+        "rip",
+        "hop_count"
+      ]
+    },
+    {
+      "id": "Q180",
+      "topic": "routing_protocols",
+      "question": "What is the maximum hop count supported by RIP before a route is considered unreachable?",
+      "options": [
+        "15",
+        "16",
+        "30",
+        "255"
+      ],
+      "answer": 1,
+      "explanation": "In RIP, a hop count of 15 is the maximum valid metric; a hop count of 16 represents infinity (an unreachable route).",
+      "difficulty": "easy",
+      "tags": [
+        "routing_protocols",
+        "rip",
+        "maximum_hop_count"
+      ]
+    },
+    {
+      "id": "Q181",
+      "topic": "routing_protocols",
+      "question": "Which routing protocol is classified as a distance-vector protocol?",
+      "options": [
+        "OSPF",
+        "RIP",
+        "BGP",
+        "ARP"
+      ],
+      "answer": 1,
+      "explanation": "RIP is a classic distance-vector routing protocol that uses the Bellman-Ford algorithm to share routing tables with immediate neighbors.",
+      "difficulty": "easy",
+      "tags": [
+        "routing_protocols",
+        "rip",
+        "distance_vector"
+      ]
+    },
+    {
+      "id": "Q182",
+      "topic": "routing_protocols",
+      "question": "Which version of RIP supports classless routing and VLSM?",
+      "options": [
+        "RIPv1",
+        "RIPv2",
+        "RIPng only",
+        "RIPv0"
+      ],
+      "answer": 1,
+      "explanation": "RIPv2 introduced support for subnet masks in routing updates, enabling Variable Length Subnet Masking (VLSM) and classless routing (CIDR).",
+      "difficulty": "medium",
+      "tags": [
+        "routing_protocols",
+        "ripv2",
+        "vlsm",
+        "classless"
+      ]
+    },
+    {
+      "id": "Q183",
+      "topic": "routing_protocols",
+      "question": "Which protocol is commonly described as an advanced distance-vector or hybrid routing protocol?",
+      "options": [
+        "EIGRP",
+        "OSPF",
+        "BGP",
+        "ICMP"
+      ],
+      "answer": 0,
+      "explanation": "Enhanced Interior Gateway Routing Protocol (EIGRP) combines distance-vector ease of configuration with link-state rapid convergence, making it an advanced distance-vector protocol.",
+      "difficulty": "easy",
+      "tags": [
+        "routing_protocols",
+        "eigrp",
+        "hybrid_protocol"
+      ]
+    },
+    {
+      "id": "Q184",
+      "topic": "routing_protocols",
+      "question": "Which algorithm is associated with EIGRP for calculating loop-free routes?",
+      "options": [
+        "SPF",
+        "DUAL",
+        "Bellman-Ford",
+        "RSA"
+      ],
+      "answer": 1,
+      "explanation": "EIGRP uses the Diffusing Update Algorithm (DUAL) to guarantee loop-free operation and provide fast convergence using feasible successors.",
+      "difficulty": "medium",
+      "tags": [
+        "routing_protocols",
+        "eigrp",
+        "dual_algorithm"
+      ]
+    },
+    {
+      "id": "Q185",
+      "topic": "routing_protocols",
+      "question": "Which of the following is a metric component used by EIGRP?",
+      "options": [
+        "Hop count only",
+        "Bandwidth and delay",
+        "TTL only",
+        "MAC address"
+      ],
+      "answer": 1,
+      "explanation": "EIGRP's composite metric formula primarily uses minimum bandwidth and cumulative delay by default (along with optional reliability, load, and MTU).",
+      "difficulty": "medium",
+      "tags": [
+        "routing_protocols",
+        "eigrp",
+        "composite_metric"
+      ]
+    },
+    {
+      "id": "Q186",
+      "topic": "routing_protocols",
+      "question": "Which routing protocol is primarily used for routing between autonomous systems?",
+      "options": [
+        "RIP",
+        "OSPF",
+        "BGP",
+        "EIGRP"
+      ],
+      "answer": 2,
+      "explanation": "Border Gateway Protocol (BGP) is the standardized Exterior Gateway Protocol (EGP) that connects different Autonomous Systems across the Internet.",
+      "difficulty": "easy",
+      "tags": [
+        "routing_protocols",
+        "bgp",
+        "inter_as",
+        "egp"
+      ]
+    },
+    {
+      "id": "Q187",
+      "topic": "routing_protocols",
+      "question": "Which transport-layer protocol does BGP use?",
+      "options": [
+        "UDP",
+        "TCP",
+        "ICMP",
+        "SCTP"
+      ],
+      "answer": 1,
+      "explanation": "BGP establishes reliable peer-to-peer peering sessions over Transmission Control Protocol (TCP).",
+      "difficulty": "easy",
+      "tags": [
+        "routing_protocols",
+        "bgp",
+        "tcp"
+      ]
+    },
+    {
+      "id": "Q188",
+      "topic": "routing_protocols",
+      "question": "What is the well-known TCP port number used by BGP?",
+      "options": [
+        "110",
+        "161",
+        "179",
+        "443"
+      ],
+      "answer": 2,
+      "explanation": "BGP peers exchange routing updates over well-known TCP destination port 179.",
+      "difficulty": "easy",
+      "tags": [
+        "routing_protocols",
+        "bgp",
+        "port_179"
+      ]
+    },
+    {
+      "id": "Q189",
+      "topic": "routing_protocols",
+      "question": "Which BGP attribute is used to influence the preferred outbound path within an autonomous system?",
+      "options": [
+        "Local Preference",
+        "TTL",
+        "Hop Count",
+        "CRC"
+      ],
+      "answer": 0,
+      "explanation": "The Local Preference (LOCAL_PREF) attribute is propagated throughout an AS to instruct internal routers on which exit path to prefer for outbound traffic.",
+      "difficulty": "medium",
+      "tags": [
+        "routing_protocols",
+        "bgp",
+        "local_preference"
+      ]
+    },
+    {
+      "id": "Q190",
+      "topic": "network_diagnostics_icmp",
+      "question": "Which protocol is primarily responsible for reporting errors and providing diagnostic information at the IP layer?",
+      "options": [
+        "ICMP",
+        "ARP",
+        "SNMP",
+        "RIP"
+      ],
+      "answer": 0,
+      "explanation": "Internet Control Message Protocol (ICMP) operates alongside IP to convey error reports, control messages, and diagnostic feedback.",
+      "difficulty": "easy",
+      "tags": [
+        "icmp",
+        "error_reporting",
+        "network_diagnostics"
+      ]
+    },
+    {
+      "id": "Q191",
+      "topic": "network_diagnostics_icmp",
+      "question": "Which ICMP message is commonly used by the ping utility?",
+      "options": [
+        "Echo Request and Echo Reply",
+        "Redirect and Timestamp",
+        "Router Solicitation and Advertisement",
+        "Source Quench and Redirect"
+      ],
+      "answer": 0,
+      "explanation": "Ping sends ICMP Echo Request messages (Type 8) to test reachability, expecting ICMP Echo Reply messages (Type 0) in return.",
+      "difficulty": "easy",
+      "tags": [
+        "icmp",
+        "ping",
+        "echo_request_reply"
+      ]
+    },
+    {
+      "id": "Q192",
+      "topic": "network_diagnostics_icmp",
+      "question": "Which ICMP message is commonly associated with the traceroute function in IPv4?",
+      "options": [
+        "Echo Reply",
+        "Time Exceeded",
+        "Destination Unreachable only",
+        "Redirect"
+      ],
+      "answer": 1,
+      "explanation": "Traceroute sends packets with incrementing TTL values; intermediate routers decrement TTL to 0, discard the packet, and return an ICMP Time Exceeded message.",
+      "difficulty": "medium",
+      "tags": [
+        "icmp",
+        "traceroute",
+        "time_exceeded"
+      ]
+    },
+    {
+      "id": "Q193",
+      "topic": "network_diagnostics_arp",
+      "question": "Which protocol resolves an IPv4 address to a MAC address on a local network?",
+      "options": [
+        "DNS",
+        "DHCP",
+        "ARP",
+        "ICMP"
+      ],
+      "answer": 2,
+      "explanation": "Address Resolution Protocol (ARP) translates a known Layer 3 IPv4 address into the corresponding Layer 2 physical MAC address on a broadcast domain.",
+      "difficulty": "easy",
+      "tags": [
+        "arp",
+        "address_resolution",
+        "mac_address"
+      ]
+    },
+    {
+      "id": "Q194",
+      "topic": "network_diagnostics_arp",
+      "question": "ARP operates primarily between which OSI layers?",
+      "options": [
+        "Transport and Session",
+        "Network and Data Link",
+        "Presentation and Application",
+        "Physical and Transport"
+      ],
+      "answer": 1,
+      "explanation": "ARP bridges Layer 3 (Network layer IP addressing) with Layer 2 (Data Link layer physical addressing).",
+      "difficulty": "medium",
+      "tags": [
+        "arp",
+        "osi_layers",
+        "network_datalink"
+      ]
+    },
+    {
+      "id": "Q195",
+      "topic": "network_diagnostics_arp",
+      "question": "What type of Ethernet destination address is normally used in an ARP Request?",
+      "options": [
+        "Unicast",
+        "Multicast",
+        "Broadcast",
+        "Anycast"
+      ],
+      "answer": 2,
+      "explanation": "ARP Requests are transmitted to the Ethernet broadcast address (FF:FF:FF:FF:FF:FF) so that all hosts on the local network receive and process the inquiry.",
+      "difficulty": "easy",
+      "tags": [
+        "arp",
+        "broadcast",
+        "destination_address"
+      ]
+    },
+    {
+      "id": "Q196",
+      "topic": "network_diagnostics_arp",
+      "question": "Which ARP message contains the MAC address corresponding to the requested IPv4 address?",
+      "options": [
+        "ARP Request",
+        "ARP Reply",
+        "ARP Broadcast",
+        "ARP Discover"
+      ],
+      "answer": 1,
+      "explanation": "The target machine responds to an ARP Request with a unicast ARP Reply containing its hardware MAC address.",
+      "difficulty": "easy",
+      "tags": [
+        "arp",
+        "arp_reply",
+        "mac_response"
+      ]
+    },
+    {
+      "id": "Q197",
+      "topic": "routing_protocols",
+      "question": "A router has two possible OSPF routes to the same destination with different costs. Which route will normally be preferred?",
+      "options": [
+        "Route with higher cost",
+        "Route with lower cost",
+        "Route with higher hop count",
+        "Route learned later"
+      ],
+      "answer": 1,
+      "explanation": "OSPF always prefers the route with the lowest cumulative metric (Cost), selecting the shortest and most bandwidth-efficient path.",
+      "difficulty": "easy",
+      "tags": [
+        "routing_protocols",
+        "ospf",
+        "lowest_cost"
+      ]
+    },
+    {
+      "id": "Q198",
+      "topic": "routing_protocols",
+      "question": "A RIP router receives a route with a metric of 16. What does this indicate?",
+      "options": [
+        "Directly connected network",
+        "Best possible route",
+        "Unreachable destination",
+        "Default route"
+      ],
+      "answer": 2,
+      "explanation": "In RIP, metric 16 represents infinity, indicating that the target network has failed or is unreachable.",
+      "difficulty": "easy",
+      "tags": [
+        "routing_protocols",
+        "rip",
+        "metric_16_infinity"
+      ]
+    },
+    {
+      "id": "Q199",
+      "topic": "network_diagnostics_arp",
+      "question": "If an IPv4 host knows the destination IP address but does not know its MAC address on the local network, which protocol will it use?",
+      "options": [
+        "BGP",
+        "OSPF",
+        "ARP",
+        "SNMP"
+      ],
+      "answer": 2,
+      "explanation": "The host broadcasts an Address Resolution Protocol (ARP) query on the local subnet to discover the MAC address associated with the known destination IP.",
+      "difficulty": "easy",
+      "tags": [
+        "arp",
+        "local_resolution",
+        "ip_to_mac"
+      ]
+    },
+    {
+      "id": "Q200",
+      "topic": "routing_protocols",
+      "question": "Which combination is correctly matched?",
+      "options": [
+        "OSPF — Hop Count",
+        "RIP — Dijkstra",
+        "BGP — TCP port 179",
+        "ARP — TCP port 161"
+      ],
+      "answer": 2,
+      "explanation": "Border Gateway Protocol (BGP) establishes peering sessions over TCP port 179. (OSPF uses Cost, RIP uses Bellman-Ford/Hop Count, and SNMP uses UDP 161).",
+      "difficulty": "medium",
+      "tags": [
+        "routing_protocols",
+        "bgp",
+        "protocol_matching"
+      ]
+    }
+  ]
+}

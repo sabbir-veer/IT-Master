@@ -1,0 +1,962 @@
+{
+  "dataset_id": "networking_mcq_batch_02_q051_q100",
+  "title": "Computer Networking MCQs (Batch 2: Q051 - Q100)",
+  "topics": {
+    "network_topologies": "Network Topologies and Link Calculations",
+    "network_types": "Network Classifications (LAN, MAN, WAN, PAN)",
+    "ipv4_subnetting": "IPv4 Addressing, Subnetting, and CIDR"
+  },
+  "questions": [
+    {
+      "id": "Q051",
+      "topic": "network_topologies",
+      "question": "Which topology connects all devices to a central device?",
+      "options": [
+        "Bus",
+        "Ring",
+        "Star",
+        "Mesh"
+      ],
+      "answer": 2,
+      "explanation": "In a star topology, all network nodes are individually connected to a central connecting device such as a switch or hub.",
+      "difficulty": "easy",
+      "tags": [
+        "network_topologies",
+        "star_topology",
+        "central_device"
+      ]
+    },
+    {
+      "id": "Q052",
+      "topic": "network_topologies",
+      "question": "Which topology uses a single backbone cable to connect all devices?",
+      "options": [
+        "Star",
+        "Bus",
+        "Ring",
+        "Mesh"
+      ],
+      "answer": 1,
+      "explanation": "In a bus topology, all devices share a single communication line or backbone cable.",
+      "difficulty": "easy",
+      "tags": [
+        "network_topologies",
+        "bus_topology",
+        "backbone_cable"
+      ]
+    },
+    {
+      "id": "Q053",
+      "topic": "network_topologies",
+      "question": "In which topology is each device connected to exactly two other devices, forming a closed loop?",
+      "options": [
+        "Bus",
+        "Star",
+        "Ring",
+        "Tree"
+      ],
+      "answer": 2,
+      "explanation": "In a ring topology, each node connects to exactly two neighboring nodes, forming a single continuous closed circular path.",
+      "difficulty": "easy",
+      "tags": [
+        "network_topologies",
+        "ring_topology",
+        "closed_loop"
+      ]
+    },
+    {
+      "id": "Q054",
+      "topic": "network_topologies",
+      "question": "Which topology provides a dedicated point-to-point link between every pair of devices?",
+      "options": [
+        "Star",
+        "Mesh",
+        "Bus",
+        "Ring"
+      ],
+      "answer": 1,
+      "explanation": "A full mesh topology provides dedicated point-to-point connections between every pair of nodes on the network.",
+      "difficulty": "easy",
+      "tags": [
+        "network_topologies",
+        "mesh_topology",
+        "point_to_point"
+      ]
+    },
+    {
+      "id": "Q055",
+      "topic": "network_topologies",
+      "question": "If a network has 6 devices in a full mesh topology, how many links are required?",
+      "options": [
+        "12",
+        "15",
+        "18",
+        "30"
+      ],
+      "answer": 1,
+      "explanation": "Using the formula n(n - 1)/2: with n = 6, total links = 6(6 - 1)/2 = (6 × 5)/2 = 15 links.",
+      "difficulty": "medium",
+      "tags": [
+        "network_topologies",
+        "mesh_calculation",
+        "link_formula"
+      ]
+    },
+    {
+      "id": "Q056",
+      "topic": "network_topologies",
+      "question": "If 8 devices are connected using a full mesh topology, how many links are required?",
+      "options": [
+        "16",
+        "24",
+        "28",
+        "32"
+      ],
+      "answer": 2,
+      "explanation": "Using n(n - 1)/2 for n = 8: (8 × 7)/2 = 28 duplex physical links.",
+      "difficulty": "medium",
+      "tags": [
+        "network_topologies",
+        "mesh_calculation",
+        "link_formula"
+      ]
+    },
+    {
+      "id": "Q057",
+      "topic": "network_topologies",
+      "question": "What is the formula for the number of links in a full mesh network with n devices?",
+      "options": [
+        "n(n + 1)/2",
+        "n(n − 1)/2",
+        "n² − 1",
+        "2n"
+      ],
+      "answer": 1,
+      "explanation": "The formula to determine the number of physical links in a fully connected mesh network of n devices is n(n - 1)/2.",
+      "difficulty": "easy",
+      "tags": [
+        "network_topologies",
+        "formula",
+        "mesh_topology"
+      ]
+    },
+    {
+      "id": "Q058",
+      "topic": "network_topologies",
+      "question": "In a star topology, what happens if the central switch fails?",
+      "options": [
+        "Only one node fails",
+        "The entire network may become unavailable",
+        "The network automatically becomes a bus",
+        "Only the server fails"
+      ],
+      "answer": 1,
+      "explanation": "Because all nodes rely on the central hub or switch to communicate, failure of the central device creates a single point of failure that disables the entire network.",
+      "difficulty": "easy",
+      "tags": [
+        "network_topologies",
+        "star_topology",
+        "single_point_of_failure"
+      ]
+    },
+    {
+      "id": "Q059",
+      "topic": "network_topologies",
+      "question": "Which topology has the highest redundancy and fault tolerance when every node is connected to every other node?",
+      "options": [
+        "Bus",
+        "Ring",
+        "Star",
+        "Full Mesh"
+      ],
+      "answer": 3,
+      "explanation": "A full mesh topology provides the highest fault tolerance and redundancy because multiple alternate paths exist between every pair of nodes.",
+      "difficulty": "easy",
+      "tags": [
+        "network_topologies",
+        "full_mesh",
+        "redundancy",
+        "fault_tolerance"
+      ]
+    },
+    {
+      "id": "Q060",
+      "topic": "network_topologies",
+      "question": "Which topology generally requires the least amount of cabling for connecting multiple devices?",
+      "options": [
+        "Full Mesh",
+        "Star",
+        "Bus",
+        "Hybrid"
+      ],
+      "answer": 2,
+      "explanation": "A bus topology requires the least cabling because all stations tap into a single shared backbone cable.",
+      "difficulty": "easy",
+      "tags": [
+        "network_topologies",
+        "bus_topology",
+        "cabling_efficiency"
+      ]
+    },
+    {
+      "id": "Q061",
+      "topic": "network_topologies",
+      "question": "Which topology has a hierarchical structure consisting of multiple levels of nodes?",
+      "options": [
+        "Ring",
+        "Tree",
+        "Bus",
+        "Mesh"
+      ],
+      "answer": 1,
+      "explanation": "A tree topology features a hierarchical, branching structure with root, intermediate, and leaf nodes arranged in levels.",
+      "difficulty": "easy",
+      "tags": [
+        "network_topologies",
+        "tree_topology",
+        "hierarchical"
+      ]
+    },
+    {
+      "id": "Q062",
+      "topic": "network_topologies",
+      "question": "A network combines two or more different types of topologies. What is it called?",
+      "options": [
+        "Ring topology",
+        "Hybrid topology",
+        "Bus topology",
+        "Point-to-point topology"
+      ],
+      "answer": 1,
+      "explanation": "A hybrid topology integrates elements of two or more distinct topologies (e.g., star-bus or star-ring) into a unified network.",
+      "difficulty": "easy",
+      "tags": [
+        "network_topologies",
+        "hybrid_topology",
+        "composite"
+      ]
+    },
+    {
+      "id": "Q063",
+      "topic": "network_topologies",
+      "question": "Which topology is most vulnerable to failure of its single backbone cable?",
+      "options": [
+        "Bus",
+        "Mesh",
+        "Star",
+        "Tree"
+      ],
+      "answer": 0,
+      "explanation": "In a bus topology, a break or fault in the primary backbone cable halts all communication across the entire bus.",
+      "difficulty": "easy",
+      "tags": [
+        "network_topologies",
+        "bus_topology",
+        "vulnerability"
+      ]
+    },
+    {
+      "id": "Q064",
+      "topic": "network_topologies",
+      "question": "In a ring topology with 10 devices, how many direct links are normally required to form the complete ring?",
+      "options": [
+        "5",
+        "9",
+        "10",
+        "20"
+      ],
+      "answer": 2,
+      "explanation": "In a standard single-ring topology with n devices, exactly n direct links are required to connect each node to its neighbor in a closed loop (10 devices = 10 links).",
+      "difficulty": "medium",
+      "tags": [
+        "network_topologies",
+        "ring_topology",
+        "link_count"
+      ]
+    },
+    {
+      "id": "Q065",
+      "topic": "network_topologies",
+      "question": "In a full mesh topology with 10 devices, how many links are required?",
+      "options": [
+        "20",
+        "45",
+        "50",
+        "90"
+      ],
+      "answer": 1,
+      "explanation": "Applying n(n - 1)/2 with n = 10 gives 10(9)/2 = 45 total physical links.",
+      "difficulty": "medium",
+      "tags": [
+        "network_topologies",
+        "mesh_calculation",
+        "link_formula"
+      ]
+    },
+    {
+      "id": "Q066",
+      "topic": "network_topologies",
+      "question": "In a star topology with 12 devices connected to one central switch, how many direct links are required?",
+      "options": [
+        "11",
+        "12",
+        "22",
+        "24"
+      ],
+      "answer": 1,
+      "explanation": "In a star topology, each individual end device requires exactly one dedicated link to the central switch, resulting in 12 links for 12 devices.",
+      "difficulty": "easy",
+      "tags": [
+        "network_topologies",
+        "star_topology",
+        "link_count"
+      ]
+    },
+    {
+      "id": "Q067",
+      "topic": "network_topologies",
+      "question": "In a full mesh network of 7 devices, how many links must be added if one new device is introduced?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "14"
+      ],
+      "answer": 1,
+      "explanation": "To maintain full mesh connectivity, adding an 8th device requires establishing a new dedicated link to each of the 7 existing devices, so 7 links must be added.",
+      "difficulty": "medium",
+      "tags": [
+        "network_topologies",
+        "mesh_topology",
+        "scalability"
+      ]
+    },
+    {
+      "id": "Q068",
+      "topic": "network_topologies",
+      "question": "Which topology is commonly associated with token-based access mechanisms?",
+      "options": [
+        "Ring",
+        "Star",
+        "Bus",
+        "Tree"
+      ],
+      "answer": 0,
+      "explanation": "Token Ring networks (IEEE 802.5) pass a small frame called a token circularly around the ring topology to control medium access.",
+      "difficulty": "easy",
+      "tags": [
+        "network_topologies",
+        "ring_topology",
+        "token_ring"
+      ]
+    },
+    {
+      "id": "Q069",
+      "topic": "network_topologies",
+      "question": "Which topology provides the greatest number of alternative paths between nodes?",
+      "options": [
+        "Bus",
+        "Star",
+        "Full Mesh",
+        "Ring"
+      ],
+      "answer": 2,
+      "explanation": "A full mesh topology provides direct dedicated paths as well as multiple alternate routing paths between all nodes.",
+      "difficulty": "easy",
+      "tags": [
+        "network_topologies",
+        "full_mesh",
+        "alternate_paths"
+      ]
+    },
+    {
+      "id": "Q070",
+      "topic": "network_topologies",
+      "question": "A network has 15 devices in a full mesh topology. How many total links are required?",
+      "options": [
+        "90",
+        "100",
+        "105",
+        "210"
+      ],
+      "answer": 2,
+      "explanation": "Using n(n - 1)/2 for n = 15: 15 × 14 / 2 = 105 total links.",
+      "difficulty": "medium",
+      "tags": [
+        "network_topologies",
+        "mesh_calculation",
+        "link_formula"
+      ]
+    },
+    {
+      "id": "Q071",
+      "topic": "network_types",
+      "question": "Which type of network typically covers a small geographical area such as a room, office, or building?",
+      "options": [
+        "WAN",
+        "MAN",
+        "LAN",
+        "PAN"
+      ],
+      "answer": 2,
+      "explanation": "A Local Area Network (LAN) covers a restricted geographic radius such as a single room, office, home, or commercial building.",
+      "difficulty": "easy",
+      "tags": [
+        "network_types",
+        "lan",
+        "geographical_scope"
+      ]
+    },
+    {
+      "id": "Q072",
+      "topic": "network_types",
+      "question": "Which network is designed to cover a metropolitan or city-wide area?",
+      "options": [
+        "PAN",
+        "LAN",
+        "MAN",
+        "WAN"
+      ],
+      "answer": 2,
+      "explanation": "A Metropolitan Area Network (MAN) is designed to interconnect communication resources spanning an entire city or metropolitan region.",
+      "difficulty": "easy",
+      "tags": [
+        "network_types",
+        "man",
+        "city_wide"
+      ]
+    },
+    {
+      "id": "Q073",
+      "topic": "network_types",
+      "question": "Which type of network generally covers the largest geographical area?",
+      "options": [
+        "PAN",
+        "LAN",
+        "MAN",
+        "WAN"
+      ],
+      "answer": 3,
+      "explanation": "A Wide Area Network (WAN) spans the largest geographical area, interconnecting regions across cities, countries, or continents.",
+      "difficulty": "easy",
+      "tags": [
+        "network_types",
+        "wan",
+        "largest_area"
+      ]
+    },
+    {
+      "id": "Q074",
+      "topic": "network_types",
+      "question": "Which network is primarily designed for communication among personal devices around an individual?",
+      "options": [
+        "PAN",
+        "LAN",
+        "MAN",
+        "WAN"
+      ],
+      "answer": 0,
+      "explanation": "A Personal Area Network (PAN) interconnects devices centered around an individual person within a short radius of a few meters.",
+      "difficulty": "easy",
+      "tags": [
+        "network_types",
+        "pan",
+        "personal_devices"
+      ]
+    },
+    {
+      "id": "Q075",
+      "topic": "network_types",
+      "question": "Bluetooth communication between a smartphone and a wireless headset is an example of:",
+      "options": [
+        "LAN",
+        "MAN",
+        "PAN",
+        "WAN"
+      ],
+      "answer": 2,
+      "explanation": "Short-range wireless connections between personal accessories like smartphones and headsets form a Personal Area Network (PAN).",
+      "difficulty": "easy",
+      "tags": [
+        "network_types",
+        "pan",
+        "bluetooth"
+      ]
+    },
+    {
+      "id": "Q076",
+      "topic": "network_types",
+      "question": "A network connecting computers within a university campus is generally classified as:",
+      "options": [
+        "PAN",
+        "LAN",
+        "MAN",
+        "WAN"
+      ],
+      "answer": 1,
+      "explanation": "Computers interconnected within a contiguous campus or organizational property are classified as a LAN (or Campus LAN).",
+      "difficulty": "easy",
+      "tags": [
+        "network_types",
+        "lan",
+        "campus_network"
+      ]
+    },
+    {
+      "id": "Q077",
+      "topic": "network_types",
+      "question": "A network connecting multiple LANs across different branches within the same city is most appropriately classified as:",
+      "options": [
+        "PAN",
+        "LAN",
+        "MAN",
+        "WAN"
+      ],
+      "answer": 2,
+      "explanation": "Interconnecting disparate LANs distributed across municipal branch offices within a single city constitutes a Metropolitan Area Network (MAN).",
+      "difficulty": "medium",
+      "tags": [
+        "network_types",
+        "man",
+        "city_branches"
+      ]
+    },
+    {
+      "id": "Q078",
+      "topic": "network_types",
+      "question": "A company connects its offices in Dhaka, Chattogram, and Rajshahi using a private network. Which type of network is most appropriate?",
+      "options": [
+        "PAN",
+        "LAN",
+        "MAN",
+        "WAN"
+      ],
+      "answer": 3,
+      "explanation": "A network connecting distant branch offices located across different major cities and divisions of a country is a Wide Area Network (WAN).",
+      "difficulty": "easy",
+      "tags": [
+        "network_types",
+        "wan",
+        "bangladesh_context"
+      ]
+    },
+    {
+      "id": "Q079",
+      "topic": "network_types",
+      "question": "Which network usually has the smallest coverage area?",
+      "options": [
+        "LAN",
+        "PAN",
+        "MAN",
+        "WAN"
+      ],
+      "answer": 1,
+      "explanation": "A Personal Area Network (PAN) typically spans a workspace radius of approximately 10 meters, making it the smallest in geographical reach.",
+      "difficulty": "easy",
+      "tags": [
+        "network_types",
+        "pan",
+        "coverage_area"
+      ]
+    },
+    {
+      "id": "Q080",
+      "topic": "network_types",
+      "question": "Which network generally provides high-speed communication within a single building?",
+      "options": [
+        "LAN",
+        "MAN",
+        "WAN",
+        "PAN"
+      ],
+      "answer": 0,
+      "explanation": "A Local Area Network (LAN) delivers high-speed data transmission (e.g., Gigabit Ethernet) within a single facility or office building.",
+      "difficulty": "easy",
+      "tags": [
+        "network_types",
+        "lan",
+        "high_speed"
+      ]
+    },
+    {
+      "id": "Q081",
+      "topic": "network_types",
+      "question": "Which network is commonly used to connect geographically distant cities or countries?",
+      "options": [
+        "PAN",
+        "LAN",
+        "MAN",
+        "WAN"
+      ],
+      "answer": 3,
+      "explanation": "Wide Area Networks (WANs) utilize long-distance telecommunication circuits to connect distant cities, states, and nations.",
+      "difficulty": "easy",
+      "tags": [
+        "network_types",
+        "wan",
+        "international_cities"
+      ]
+    },
+    {
+      "id": "Q082",
+      "topic": "network_types",
+      "question": "A smartwatch communicating with a smartphone using Bluetooth forms a:",
+      "options": [
+        "LAN",
+        "PAN",
+        "MAN",
+        "WAN"
+      ],
+      "answer": 1,
+      "explanation": "Wearables communicating with mobile phones via Bluetooth operate within a personal operating space, forming a PAN.",
+      "difficulty": "easy",
+      "tags": [
+        "network_types",
+        "pan",
+        "smartwatch_bluetooth"
+      ]
+    },
+    {
+      "id": "Q083",
+      "topic": "network_types",
+      "question": "Which type of network is larger than a LAN but smaller than a WAN?",
+      "options": [
+        "PAN",
+        "MAN",
+        "CAN",
+        "SAN"
+      ],
+      "answer": 1,
+      "explanation": "A Metropolitan Area Network (MAN) bridges the scale between local area networks and wide area networks.",
+      "difficulty": "easy",
+      "tags": [
+        "network_types",
+        "man",
+        "network_hierarchy"
+      ]
+    },
+    {
+      "id": "Q084",
+      "topic": "network_types",
+      "question": "The Internet is best described as an example of a:",
+      "options": [
+        "PAN",
+        "LAN",
+        "MAN",
+        "WAN"
+      ],
+      "answer": 3,
+      "explanation": "The global Internet is the quintessential example of a public Wide Area Network (WAN), interconnecting millions of smaller networks.",
+      "difficulty": "easy",
+      "tags": [
+        "network_types",
+        "internet",
+        "wan"
+      ]
+    },
+    {
+      "id": "Q085",
+      "topic": "network_types",
+      "question": "Which network type is generally owned and controlled by a single organization within a limited area?",
+      "options": [
+        "LAN",
+        "WAN",
+        "MAN",
+        "PAN"
+      ],
+      "answer": 0,
+      "explanation": "LANs are typically privately owned, deployed, and managed by a single enterprise or entity across a localized premise.",
+      "difficulty": "easy",
+      "tags": [
+        "network_types",
+        "lan",
+        "private_ownership"
+      ]
+    },
+    {
+      "id": "Q086",
+      "topic": "network_types",
+      "question": "If 20 computers are connected within a single office using Ethernet switches, the network is most likely a:",
+      "options": [
+        "PAN",
+        "LAN",
+        "MAN",
+        "WAN"
+      ],
+      "answer": 1,
+      "explanation": "An interconnected cluster of office computers utilizing Ethernet switching within an office suite is a classic Local Area Network (LAN).",
+      "difficulty": "easy",
+      "tags": [
+        "network_types",
+        "lan",
+        "ethernet_office"
+      ]
+    },
+    {
+      "id": "Q087",
+      "topic": "network_types",
+      "question": "Which network would be most suitable for connecting several government offices located throughout a city?",
+      "options": [
+        "PAN",
+        "LAN",
+        "MAN",
+        "WAN"
+      ],
+      "answer": 2,
+      "explanation": "Connecting distributed public administration offices across different zones of a municipality is the standard role of a MAN.",
+      "difficulty": "medium",
+      "tags": [
+        "network_types",
+        "man",
+        "city_government"
+      ]
+    },
+    {
+      "id": "Q088",
+      "topic": "network_types",
+      "question": "Which technology is commonly associated with PAN connectivity?",
+      "options": [
+        "Bluetooth",
+        "MPLS",
+        "SONET",
+        "BGP"
+      ],
+      "answer": 0,
+      "explanation": "Bluetooth (IEEE 802.15.1) is the standard wireless protocol designed specifically for Personal Area Networks.",
+      "difficulty": "easy",
+      "tags": [
+        "network_types",
+        "pan",
+        "bluetooth"
+      ]
+    },
+    {
+      "id": "Q089",
+      "topic": "network_types",
+      "question": "Which network type usually involves service-provider infrastructure and long-distance communication links?",
+      "options": [
+        "PAN",
+        "LAN",
+        "MAN",
+        "WAN"
+      ],
+      "answer": 3,
+      "explanation": "WAN deployments depend on telecommunication carrier infrastructure, leased lines, and long-haul transmission systems.",
+      "difficulty": "easy",
+      "tags": [
+        "network_types",
+        "wan",
+        "telecom_infrastructure"
+      ]
+    },
+    {
+      "id": "Q090",
+      "topic": "network_types",
+      "question": "Which sequence correctly arranges these networks from smallest to largest typical geographical coverage?",
+      "options": [
+        "PAN → LAN → MAN → WAN",
+        "LAN → PAN → MAN → WAN",
+        "PAN → MAN → LAN → WAN",
+        "LAN → MAN → PAN → WAN"
+      ],
+      "answer": 0,
+      "explanation": "In order of physical scope: Personal Area Network (PAN) < Local Area Network (LAN) < Metropolitan Area Network (MAN) < Wide Area Network (WAN).",
+      "difficulty": "medium",
+      "tags": [
+        "network_types",
+        "geographical_hierarchy",
+        "comparison"
+      ]
+    },
+    {
+      "id": "Q091",
+      "topic": "ipv4_subnetting",
+      "question": "How many usable host addresses are available in a /24 IPv4 network?",
+      "options": [
+        "254",
+        "256",
+        "255",
+        "252"
+      ],
+      "answer": 0,
+      "explanation": "A /24 network has 8 host bits (2^8 = 256 addresses). Subtracting the network address and broadcast address leaves 254 usable host addresses.",
+      "difficulty": "easy",
+      "tags": [
+        "ipv4_subnetting",
+        "usable_hosts",
+        "slash_24"
+      ]
+    },
+    {
+      "id": "Q092",
+      "topic": "ipv4_subnetting",
+      "question": "What is the subnet mask for a /26 network?",
+      "options": [
+        "255.255.255.0",
+        "255.255.255.192",
+        "255.255.255.224",
+        "255.255.255.128"
+      ],
+      "answer": 1,
+      "explanation": "A /26 prefix has 26 network bits: 11111111.11111111.11111111.11000000, which in decimal is 255.255.255.192.",
+      "difficulty": "easy",
+      "tags": [
+        "ipv4_subnetting",
+        "subnet_mask",
+        "slash_26"
+      ]
+    },
+    {
+      "id": "Q093",
+      "topic": "ipv4_subnetting",
+      "question": "How many usable host addresses are available in a /26 subnet?",
+      "options": [
+        "30",
+        "62",
+        "64",
+        "126"
+      ],
+      "answer": 1,
+      "explanation": "With a /26 prefix, 6 bits remain for hosts (32 - 26 = 6). Total addresses = 2^6 = 64; usable host addresses = 64 - 2 = 62.",
+      "difficulty": "medium",
+      "tags": [
+        "ipv4_subnetting",
+        "usable_hosts",
+        "slash_26"
+      ]
+    },
+    {
+      "id": "Q094",
+      "topic": "ipv4_subnetting",
+      "question": "How many subnets are created when a /24 network is divided into /27 subnets?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "16"
+      ],
+      "answer": 2,
+      "explanation": "Borrowing bits from /24 to /27 yields 27 - 24 = 3 borrowed subnet bits. Number of subnets created = 2^3 = 8.",
+      "difficulty": "medium",
+      "tags": [
+        "ipv4_subnetting",
+        "subnet_count",
+        "borrowed_bits"
+      ]
+    },
+    {
+      "id": "Q095",
+      "topic": "ipv4_subnetting",
+      "question": "How many usable hosts can a /27 subnet support?",
+      "options": [
+        "30",
+        "32",
+        "62",
+        "14"
+      ],
+      "answer": 0,
+      "explanation": "A /27 subnet leaves 32 - 27 = 5 host bits. Total addresses = 2^5 = 32; usable host addresses = 32 - 2 = 30.",
+      "difficulty": "easy",
+      "tags": [
+        "ipv4_subnetting",
+        "usable_hosts",
+        "slash_27"
+      ]
+    },
+    {
+      "id": "Q096",
+      "topic": "ipv4_subnetting",
+      "question": "What is the subnet mask for /28?",
+      "options": [
+        "255.255.255.192",
+        "255.255.255.224",
+        "255.255.255.240",
+        "255.255.255.248"
+      ],
+      "answer": 2,
+      "explanation": "A /28 prefix has 4 bits on in the fourth octet: 11110000 binary = 128 + 64 + 32 + 16 = 240, giving 255.255.255.240.",
+      "difficulty": "easy",
+      "tags": [
+        "ipv4_subnetting",
+        "subnet_mask",
+        "slash_28"
+      ]
+    },
+    {
+      "id": "Q097",
+      "topic": "ipv4_subnetting",
+      "question": "How many usable host addresses are available in a /28 subnet?",
+      "options": [
+        "14",
+        "16",
+        "30",
+        "12"
+      ],
+      "answer": 0,
+      "explanation": "A /28 subnet has 32 - 28 = 4 host bits. Total addresses = 2^4 = 16; usable hosts = 16 - 2 = 14.",
+      "difficulty": "easy",
+      "tags": [
+        "ipv4_subnetting",
+        "usable_hosts",
+        "slash_28"
+      ]
+    },
+    {
+      "id": "Q098",
+      "topic": "ipv4_subnetting",
+      "question": "What is the block size of a /27 subnet in the last octet?",
+      "options": [
+        "16",
+        "32",
+        "64",
+        "128"
+      ],
+      "answer": 1,
+      "explanation": "The mask for /27 is 255.255.255.224. The block size (increment) is 256 - 224 = 32.",
+      "difficulty": "medium",
+      "tags": [
+        "ipv4_subnetting",
+        "block_size",
+        "slash_27"
+      ]
+    },
+    {
+      "id": "Q099",
+      "topic": "ipv4_subnetting",
+      "question": "What is the network address of 192.168.10.75/26?",
+      "options": [
+        "192.168.10.0",
+        "192.168.10.64",
+        "192.168.10.75",
+        "192.168.10.128"
+      ],
+      "answer": 1,
+      "explanation": "For /26 (mask 255.255.255.192), the block size is 64. Subnet ranges are 0-63, 64-127. Host .75 falls in the subnet starting at 192.168.10.64.",
+      "difficulty": "medium",
+      "tags": [
+        "ipv4_subnetting",
+        "network_address",
+        "calculation"
+      ]
+    },
+    {
+      "id": "Q100",
+      "topic": "ipv4_subnetting",
+      "question": "What is the broadcast address of 192.168.10.75/26?",
+      "options": [
+        "192.168.10.63",
+        "192.168.10.127",
+        "192.168.10.128",
+        "192.168.10.255"
+      ],
+      "answer": 1,
+      "explanation": "The subnet range for 192.168.10.75/26 is 192.168.10.64 through 192.168.10.127, making 192.168.10.127 the directed broadcast address.",
+      "difficulty": "medium",
+      "tags": [
+        "ipv4_subnetting",
+        "broadcast_address",
+        "calculation"
+      ]
+    }
+  ]
+}

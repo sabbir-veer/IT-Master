@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
   BookOpenCheck,
+  BookOpen,
   BarChart3,
   CheckCircle2,
   Menu,
@@ -19,6 +20,7 @@ export default function Navbar() {
 
   const navLinks = [
     { href: '/', label: 'Overview', icon: BookOpenCheck },
+    { href: '/reading', label: 'Reading Mode', icon: BookOpen },
     { href: '/quiz', label: 'Take Quiz', icon: Sparkles },
     { href: '/analytics', label: 'Analytics', icon: BarChart3 },
     { href: '/results', label: 'Last Result', icon: CheckCircle2 },

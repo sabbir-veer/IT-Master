@@ -1,0 +1,964 @@
+{
+  "dataset_id": "networking_mcq_batch_03_q101_q150",
+  "title": "Computer Networking MCQs (Batch 3: Q101 - Q150)",
+  "topics": {
+    "ipv4_subnetting": "IPv4 Addressing, Subnetting, and CIDR",
+    "nat_and_private_ip": "Private IP Addressing and Network Address Translation",
+    "ipv6_addressing": "IPv6 Addressing and Structure",
+    "transport_layer_protocols": "Transport Layer (TCP, UDP, and Handshake)",
+    "application_protocols": "Application Layer Protocols and Services"
+  },
+  "questions": [
+    {
+      "id": "Q101",
+      "topic": "ipv4_subnetting",
+      "question": "Which of the following is a valid host address in the subnet 192.168.1.64/27?",
+      "options": [
+        "192.168.1.64",
+        "192.168.1.95",
+        "192.168.1.80",
+        "192.168.1.96"
+      ],
+      "answer": 2,
+      "explanation": "For 192.168.1.64/27, the subnet spans 192.168.1.64 to .95. 192.168.1.64 is the network address and .95 is the broadcast address, making 192.168.1.80 a valid usable host address.",
+      "difficulty": "medium",
+      "tags": [
+        "ipv4_subnetting",
+        "valid_host",
+        "slash_27"
+      ]
+    },
+    {
+      "id": "Q102",
+      "topic": "ipv4_subnetting",
+      "question": "What is the first usable host address of 10.10.20.128/28?",
+      "options": [
+        "10.10.20.128",
+        "10.10.20.129",
+        "10.10.20.130",
+        "10.10.20.144"
+      ],
+      "answer": 1,
+      "explanation": "The network address is 10.10.20.128. The first usable host address is always network address + 1, which is 10.10.20.129.",
+      "difficulty": "easy",
+      "tags": [
+        "ipv4_subnetting",
+        "first_host",
+        "slash_28"
+      ]
+    },
+    {
+      "id": "Q103",
+      "topic": "ipv4_subnetting",
+      "question": "What is the last usable host address of 172.16.5.0/29?",
+      "options": [
+        "172.16.5.6",
+        "172.16.5.7",
+        "172.16.5.8",
+        "172.16.5.5"
+      ],
+      "answer": 0,
+      "explanation": "For 172.16.5.0/29, the block size is 8. The network address is .0 and broadcast address is .7. The last usable host is broadcast - 1, which is 172.16.5.6.",
+      "difficulty": "medium",
+      "tags": [
+        "ipv4_subnetting",
+        "last_host",
+        "slash_29"
+      ]
+    },
+    {
+      "id": "Q104",
+      "topic": "ipv4_subnetting",
+      "question": "A /30 subnet contains how many total IP addresses?",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "answer": 1,
+      "explanation": "A /30 prefix leaves 2 host bits (32 - 30 = 2). Total IP addresses = 2^2 = 4.",
+      "difficulty": "easy",
+      "tags": [
+        "ipv4_subnetting",
+        "total_addresses",
+        "slash_30"
+      ]
+    },
+    {
+      "id": "Q105",
+      "topic": "ipv4_subnetting",
+      "question": "How many usable host addresses are available in a /30 subnet?",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "6"
+      ],
+      "answer": 1,
+      "explanation": "In a /30 subnet, total addresses = 4. Subtracting the network and broadcast addresses leaves 4 - 2 = 2 usable host addresses (ideal for point-to-point links).",
+      "difficulty": "easy",
+      "tags": [
+        "ipv4_subnetting",
+        "usable_hosts",
+        "point_to_point"
+      ]
+    },
+    {
+      "id": "Q106",
+      "topic": "ipv4_subnetting",
+      "question": "A /24 network is subnetted using a /26 prefix. How many usable hosts are available in each subnet?",
+      "options": [
+        "30",
+        "62",
+        "64",
+        "126"
+      ],
+      "answer": 1,
+      "explanation": "A /26 prefix leaves 6 host bits (2^6 = 64 total addresses). Subtracting network and broadcast addresses gives 64 - 2 = 62 usable hosts per subnet.",
+      "difficulty": "easy",
+      "tags": [
+        "ipv4_subnetting",
+        "usable_hosts",
+        "slash_26"
+      ]
+    },
+    {
+      "id": "Q107",
+      "topic": "ipv4_subnetting",
+      "question": "Which prefix provides exactly 14 usable host addresses per subnet?",
+      "options": [
+        "/27",
+        "/28",
+        "/29",
+        "/30"
+      ],
+      "answer": 1,
+      "explanation": "A /28 prefix has 4 host bits. 2^4 - 2 = 16 - 2 = 14 usable host addresses.",
+      "difficulty": "easy",
+      "tags": [
+        "ipv4_subnetting",
+        "prefix_length",
+        "usable_hosts"
+      ]
+    },
+    {
+      "id": "Q108",
+      "topic": "ipv4_subnetting",
+      "question": "What is the broadcast address of 192.168.50.130/27?",
+      "options": [
+        "192.168.50.127",
+        "192.168.50.159",
+        "192.168.50.160",
+        "192.168.50.255"
+      ],
+      "answer": 1,
+      "explanation": "For /27, block size is 32. Subnet ranges include 128-159. For host .130, the network is 192.168.50.128 and the broadcast address is 192.168.50.159.",
+      "difficulty": "medium",
+      "tags": [
+        "ipv4_subnetting",
+        "broadcast_address",
+        "slash_27"
+      ]
+    },
+    {
+      "id": "Q109",
+      "topic": "ipv4_subnetting",
+      "question": "What is the network address of 172.20.35.200/28?",
+      "options": [
+        "172.20.35.192",
+        "172.20.35.200",
+        "172.20.35.208",
+        "172.20.35.224"
+      ],
+      "answer": 0,
+      "explanation": "For /28, the block size is 16. Multiples of 16 near 200 are 192 and 208. The subnet for .200 begins at 172.20.35.192.",
+      "difficulty": "medium",
+      "tags": [
+        "ipv4_subnetting",
+        "network_address",
+        "slash_28"
+      ]
+    },
+    {
+      "id": "Q110",
+      "topic": "ipv4_subnetting",
+      "question": "A network 192.168.1.0/24 must be divided into at least 10 equal-sized subnets. Which prefix should be used?",
+      "options": [
+        "/26",
+        "/27",
+        "/28",
+        "/29"
+      ],
+      "answer": 2,
+      "explanation": "To get at least 10 subnets, 2^n >= 10 requires n = 4 borrowed bits. 24 + 4 = 28, so prefix /28 yields 16 subnets.",
+      "difficulty": "medium",
+      "tags": [
+        "ipv4_subnetting",
+        "subnet_design",
+        "slash_28"
+      ]
+    },
+    {
+      "id": "Q111",
+      "topic": "nat_and_private_ip",
+      "question": "Which of the following is a private IPv4 address?",
+      "options": [
+        "8.8.8.8",
+        "172.20.10.5",
+        "1.1.1.1",
+        "203.0.113.5"
+      ],
+      "answer": 1,
+      "explanation": "Under RFC 1918, the range 172.16.0.0 to 172.31.255.255 is private. 172.20.10.5 falls within this range.",
+      "difficulty": "easy",
+      "tags": [
+        "private_ip",
+        "rfc1918",
+        "class_b"
+      ]
+    },
+    {
+      "id": "Q112",
+      "topic": "nat_and_private_ip",
+      "question": "Which IPv4 address range is reserved for private networks?",
+      "options": [
+        "10.0.0.0/8",
+        "11.0.0.0/8",
+        "12.0.0.0/8",
+        "13.0.0.0/8"
+      ],
+      "answer": 0,
+      "explanation": "10.0.0.0/8 (10.0.0.0 to 10.255.255.255) is the Class A private IP address space specified in RFC 1918.",
+      "difficulty": "easy",
+      "tags": [
+        "private_ip",
+        "rfc1918",
+        "class_a"
+      ]
+    },
+    {
+      "id": "Q113",
+      "topic": "nat_and_private_ip",
+      "question": "Which of the following is NOT a private IPv4 address?",
+      "options": [
+        "10.25.30.40",
+        "172.16.50.10",
+        "192.168.1.100",
+        "172.32.10.5"
+      ],
+      "answer": 3,
+      "explanation": "The Class B private range extends only up to 172.31.255.255. Thus, 172.32.10.5 is a public IP address.",
+      "difficulty": "easy",
+      "tags": [
+        "private_ip",
+        "public_ip",
+        "rfc1918"
+      ]
+    },
+    {
+      "id": "Q114",
+      "topic": "nat_and_private_ip",
+      "question": "What is the complete private IPv4 range within the 172.x.x.x block?",
+      "options": [
+        "172.0.0.0/12",
+        "172.16.0.0/12",
+        "172.16.0.0/16",
+        "172.32.0.0/12"
+      ],
+      "answer": 1,
+      "explanation": "The Class B private address space spans 172.16.0.0 to 172.31.255.255, which is represented in CIDR as 172.16.0.0/12.",
+      "difficulty": "medium",
+      "tags": [
+        "private_ip",
+        "cidr",
+        "rfc1918"
+      ]
+    },
+    {
+      "id": "Q115",
+      "topic": "nat_and_private_ip",
+      "question": "Which range is reserved for private IPv4 addresses in the 192.x.x.x block?",
+      "options": [
+        "192.0.0.0/16",
+        "192.168.0.0/16",
+        "192.168.1.0/24",
+        "192.169.0.0/16"
+      ],
+      "answer": 1,
+      "explanation": "The Class C private address range covers 192.168.0.0 to 192.168.255.255, denoted by 192.168.0.0/16.",
+      "difficulty": "easy",
+      "tags": [
+        "private_ip",
+        "class_c",
+        "rfc1918"
+      ]
+    },
+    {
+      "id": "Q116",
+      "topic": "nat_and_private_ip",
+      "question": "What is the primary purpose of NAT?",
+      "options": [
+        "Encrypt IP packets",
+        "Translate between private and public IP addresses",
+        "Assign MAC addresses",
+        "Resolve domain names"
+      ],
+      "answer": 1,
+      "explanation": "Network Address Translation (NAT) maps private (internal) IPv4 addresses to globally routable public IPv4 addresses, conserving public IP space.",
+      "difficulty": "easy",
+      "tags": [
+        "nat",
+        "address_translation",
+        "public_private"
+      ]
+    },
+    {
+      "id": "Q117",
+      "topic": "nat_and_private_ip",
+      "question": "Which NAT technique allows multiple private hosts to share a single public IP address using different port numbers?",
+      "options": [
+        "Static NAT",
+        "Dynamic NAT",
+        "PAT",
+        "ARP"
+      ],
+      "answer": 2,
+      "explanation": "Port Address Translation (PAT), or NAT Overload, maps multiple private hosts to a single public IP using distinctive source port numbers.",
+      "difficulty": "easy",
+      "tags": [
+        "nat",
+        "pat",
+        "nat_overload"
+      ]
+    },
+    {
+      "id": "Q118",
+      "topic": "nat_and_private_ip",
+      "question": "A company has 50 private IP addresses but only 5 public IP addresses. Which NAT type can dynamically map private addresses to a pool of public addresses?",
+      "options": [
+        "Static NAT",
+        "Dynamic NAT",
+        "PAT",
+        "IPv6 NAT"
+      ],
+      "answer": 1,
+      "explanation": "Dynamic NAT translates private IP addresses to public IP addresses chosen from a predefined pool of available public addresses on a first-come, first-served basis.",
+      "difficulty": "medium",
+      "tags": [
+        "nat",
+        "dynamic_nat",
+        "address_pool"
+      ]
+    },
+    {
+      "id": "Q119",
+      "topic": "nat_and_private_ip",
+      "question": "Which NAT type typically establishes a one-to-one permanent mapping between a private IP and a public IP?",
+      "options": [
+        "Static NAT",
+        "Dynamic NAT",
+        "PAT",
+        "DHCP"
+      ],
+      "answer": 0,
+      "explanation": "Static NAT assigns an unchanging, one-to-one mapping between a specific local private address and a public external IP address (commonly used for web/mail servers).",
+      "difficulty": "easy",
+      "tags": [
+        "nat",
+        "static_nat",
+        "one_to_one"
+      ]
+    },
+    {
+      "id": "Q120",
+      "topic": "ipv6_addressing",
+      "question": "Which protocol version uses 128-bit addresses?",
+      "options": [
+        "IPv4",
+        "IPv5",
+        "IPv6",
+        "IPv8"
+      ],
+      "answer": 2,
+      "explanation": "IPv6 addresses are 128 bits in length, drastically expanding the available address space compared to IPv4's 32-bit addresses.",
+      "difficulty": "easy",
+      "tags": [
+        "ipv6",
+        "address_length",
+        "bits"
+      ]
+    },
+    {
+      "id": "Q121",
+      "topic": "ipv6_addressing",
+      "question": "How many hexadecimal digits are used to represent a full IPv6 address?",
+      "options": [
+        "8",
+        "16",
+        "32",
+        "64"
+      ],
+      "answer": 2,
+      "explanation": "An IPv6 address contains 128 bits. Since each hexadecimal digit represents 4 bits, a complete uncompressed IPv6 address consists of 128 / 4 = 32 hexadecimal digits.",
+      "difficulty": "medium",
+      "tags": [
+        "ipv6",
+        "hexadecimal",
+        "representation"
+      ]
+    },
+    {
+      "id": "Q122",
+      "topic": "ipv6_addressing",
+      "question": "How many bits are there in an IPv6 address?",
+      "options": [
+        "32",
+        "64",
+        "128",
+        "256"
+      ],
+      "answer": 2,
+      "explanation": "An IPv6 address consists of exactly 128 bits.",
+      "difficulty": "easy",
+      "tags": [
+        "ipv6",
+        "address_size",
+        "bits"
+      ]
+    },
+    {
+      "id": "Q123",
+      "topic": "ipv6_addressing",
+      "question": "Which notation is used to separate groups in an IPv6 address?",
+      "options": [
+        "Dot (.)",
+        "Colon (:)",
+        "Slash (/)",
+        "Hyphen (-)"
+      ],
+      "answer": 1,
+      "explanation": "IPv6 addresses are written as 8 groups of 4 hexadecimal digits, separated by colons (:).",
+      "difficulty": "easy",
+      "tags": [
+        "ipv6",
+        "notation",
+        "colon"
+      ]
+    },
+    {
+      "id": "Q124",
+      "topic": "ipv6_addressing",
+      "question": "Which of the following is a valid IPv6 address?",
+      "options": [
+        "2001:db8::1",
+        "2001.db8.0.1",
+        "2001-db8-0-1",
+        "2001:db8:0:0:0:0:0:0:1"
+      ],
+      "answer": 0,
+      "explanation": "2001:db8::1 is valid compressed IPv6 notation. Option D has 9 hextets (an IPv6 address has only 8).",
+      "difficulty": "medium",
+      "tags": [
+        "ipv6",
+        "valid_address",
+        "compression"
+      ]
+    },
+    {
+      "id": "Q125",
+      "topic": "ipv6_addressing",
+      "question": "What does the notation :: represent in IPv6?",
+      "options": [
+        "One hexadecimal digit",
+        "One byte",
+        "One or more groups of consecutive zeros",
+        "A broadcast address"
+      ],
+      "answer": 2,
+      "explanation": "The double colon (::) represents a contiguous block of one or more 16-bit fields of zeros; it can only appear once in an address.",
+      "difficulty": "easy",
+      "tags": [
+        "ipv6",
+        "double_colon",
+        "zero_compression"
+      ]
+    },
+    {
+      "id": "Q126",
+      "topic": "ipv6_addressing",
+      "question": "Which IPv6 address type is used to communicate with the nearest member of a group according to routing distance?",
+      "options": [
+        "Unicast",
+        "Multicast",
+        "Anycast",
+        "Broadcast"
+      ],
+      "answer": 2,
+      "explanation": "An Anycast address is assigned to multiple interfaces; packets addressed to it are delivered to the topologically closest interface.",
+      "difficulty": "medium",
+      "tags": [
+        "ipv6",
+        "anycast",
+        "routing"
+      ]
+    },
+    {
+      "id": "Q127",
+      "topic": "ipv6_addressing",
+      "question": "Which addressing method was eliminated from IPv6 and replaced by multicast for similar purposes?",
+      "options": [
+        "Unicast",
+        "Broadcast",
+        "Anycast",
+        "Global unicast"
+      ],
+      "answer": 1,
+      "explanation": "IPv6 does not support broadcast addressing; broadcast functionality is handled by specialized multicast groups.",
+      "difficulty": "easy",
+      "tags": [
+        "ipv6",
+        "broadcast",
+        "multicast"
+      ]
+    },
+    {
+      "id": "Q128",
+      "topic": "ipv6_addressing",
+      "question": "What is the IPv6 equivalent of the IPv4 loopback address 127.0.0.1?",
+      "options": [
+        "::1",
+        "::",
+        "FE80::1",
+        "FF02::1"
+      ],
+      "answer": 0,
+      "explanation": "The loopback address in IPv6 is 0:0:0:0:0:0:0:1, compressed as ::1 (or ::1/128).",
+      "difficulty": "easy",
+      "tags": [
+        "ipv6",
+        "loopback",
+        "address"
+      ]
+    },
+    {
+      "id": "Q129",
+      "topic": "ipv6_addressing",
+      "question": "Which IPv6 address prefix is used for link-local addresses?",
+      "options": [
+        "2000::/3",
+        "FC00::/7",
+        "FE80::/10",
+        "FF00::/8"
+      ],
+      "answer": 2,
+      "explanation": "Link-local addresses in IPv6 use the prefix FE80::/10 and are used only for communication within a local network segment.",
+      "difficulty": "medium",
+      "tags": [
+        "ipv6",
+        "link_local",
+        "prefix"
+      ]
+    },
+    {
+      "id": "Q130",
+      "topic": "ipv6_addressing",
+      "question": "Which IPv6 address prefix is reserved for unique local addresses, roughly analogous to private IPv4 addressing?",
+      "options": [
+        "2000::/3",
+        "FC00::/7",
+        "FE80::/10",
+        "FF00::/8"
+      ],
+      "answer": 1,
+      "explanation": "Unique Local Addresses (ULA) use the prefix FC00::/7 (most commonly FD00::/8), providing private, non-globally-routed IPv6 addresses.",
+      "difficulty": "medium",
+      "tags": [
+        "ipv6",
+        "unique_local",
+        "prefix"
+      ]
+    },
+    {
+      "id": "Q131",
+      "topic": "transport_layer_protocols",
+      "question": "Which transport-layer protocol provides reliable, connection-oriented communication?",
+      "options": [
+        "UDP",
+        "IP",
+        "TCP",
+        "ICMP"
+      ],
+      "answer": 2,
+      "explanation": "Transmission Control Protocol (TCP) establishes a virtual connection and guarantees in-order, error-checked delivery of octet streams.",
+      "difficulty": "easy",
+      "tags": [
+        "transport_layer",
+        "tcp",
+        "reliable"
+      ]
+    },
+    {
+      "id": "Q132",
+      "topic": "transport_layer_protocols",
+      "question": "Which protocol is generally preferred when low latency is more important than guaranteed delivery?",
+      "options": [
+        "TCP",
+        "UDP",
+        "FTP",
+        "SMTP"
+      ],
+      "answer": 1,
+      "explanation": "UDP carries low protocol overhead without connection establishment or retransmissions, making it ideal for latency-sensitive audio/video streams.",
+      "difficulty": "easy",
+      "tags": [
+        "transport_layer",
+        "udp",
+        "low_latency"
+      ]
+    },
+    {
+      "id": "Q133",
+      "topic": "transport_layer_protocols",
+      "question": "How many steps are involved in the TCP three-way handshake?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 1,
+      "explanation": "The standard TCP connection establishment procedure consists of 3 steps: SYN, SYN-ACK, and ACK.",
+      "difficulty": "easy",
+      "tags": [
+        "tcp",
+        "three_way_handshake",
+        "connection"
+      ]
+    },
+    {
+      "id": "Q134",
+      "topic": "transport_layer_protocols",
+      "question": "Which sequence correctly represents the TCP three-way handshake?",
+      "options": [
+        "ACK → SYN → SYN-ACK",
+        "SYN → ACK → SYN-ACK",
+        "SYN → SYN-ACK → ACK",
+        "SYN-ACK → SYN → ACK"
+      ],
+      "answer": 2,
+      "explanation": "Connection begins with SYN from client, server replies with SYN-ACK, and client finishes with ACK.",
+      "difficulty": "easy",
+      "tags": [
+        "tcp",
+        "three_way_handshake",
+        "handshake_sequence"
+      ]
+    },
+    {
+      "id": "Q135",
+      "topic": "transport_layer_protocols",
+      "question": "Which TCP flag is used to initiate a connection?",
+      "options": [
+        "FIN",
+        "ACK",
+        "SYN",
+        "RST"
+      ],
+      "answer": 2,
+      "explanation": "The Synchronize (SYN) flag synchronizes sequence numbers to initiate a TCP connection.",
+      "difficulty": "easy",
+      "tags": [
+        "tcp",
+        "syn_flag",
+        "connection_initiation"
+      ]
+    },
+    {
+      "id": "Q136",
+      "topic": "transport_layer_protocols",
+      "question": "Which TCP flag is normally used to gracefully terminate a connection?",
+      "options": [
+        "SYN",
+        "FIN",
+        "ACK",
+        "PSH"
+      ],
+      "answer": 1,
+      "explanation": "The Finish (FIN) flag indicates that the sender has finished transmitting data and requests graceful connection termination.",
+      "difficulty": "easy",
+      "tags": [
+        "tcp",
+        "fin_flag",
+        "connection_termination"
+      ]
+    },
+    {
+      "id": "Q137",
+      "topic": "transport_layer_protocols",
+      "question": "Which protocol has a smaller header and generally lower overhead?",
+      "options": [
+        "TCP",
+        "UDP",
+        "DNS",
+        "DHCP"
+      ],
+      "answer": 1,
+      "explanation": "UDP has a fixed 8-byte header, whereas TCP has a minimum 20-byte header, giving UDP significantly lower protocol overhead.",
+      "difficulty": "easy",
+      "tags": [
+        "transport_layer",
+        "udp",
+        "header_overhead"
+      ]
+    },
+    {
+      "id": "Q138",
+      "topic": "application_protocols",
+      "question": "What is the default port number used by DNS for standard queries?",
+      "options": [
+        "25",
+        "53",
+        "67",
+        "80"
+      ],
+      "answer": 1,
+      "explanation": "Domain Name System (DNS) listens on well-known port 53 (primarily UDP, and TCP for large responses or zone transfers).",
+      "difficulty": "easy",
+      "tags": [
+        "dns",
+        "port_53",
+        "application_protocols"
+      ]
+    },
+    {
+      "id": "Q139",
+      "topic": "application_protocols",
+      "question": "DNS primarily performs which function?",
+      "options": [
+        "Assigns IP addresses dynamically",
+        "Translates domain names into IP addresses",
+        "Encrypts network traffic",
+        "Transfers files"
+      ],
+      "answer": 1,
+      "explanation": "DNS acts as the Internet's directory service, resolving human-readable domain names (e.g. www.google.com) to machine IP addresses.",
+      "difficulty": "easy",
+      "tags": [
+        "dns",
+        "name_resolution",
+        "domain_names"
+      ]
+    },
+    {
+      "id": "Q140",
+      "topic": "application_protocols",
+      "question": "Which DNS record maps a domain name to an IPv4 address?",
+      "options": [
+        "AAAA",
+        "MX",
+        "A",
+        "CNAME"
+      ],
+      "answer": 2,
+      "explanation": "An 'A' (Address) record maps a hostname to a 32-bit IPv4 address.",
+      "difficulty": "easy",
+      "tags": [
+        "dns",
+        "a_record",
+        "ipv4_mapping"
+      ]
+    },
+    {
+      "id": "Q141",
+      "topic": "application_protocols",
+      "question": "Which DNS record maps a domain name to an IPv6 address?",
+      "options": [
+        "A",
+        "AAAA",
+        "MX",
+        "PTR"
+      ],
+      "answer": 1,
+      "explanation": "A 'AAAA' (quad-A) record maps a hostname to a 128-bit IPv6 address.",
+      "difficulty": "easy",
+      "tags": [
+        "dns",
+        "aaaa_record",
+        "ipv6_mapping"
+      ]
+    },
+    {
+      "id": "Q142",
+      "topic": "application_protocols",
+      "question": "Which DNS record specifies mail servers for a domain?",
+      "options": [
+        "MX",
+        "NS",
+        "PTR",
+        "TXT"
+      ],
+      "answer": 0,
+      "explanation": "Mail Exchanger (MX) records designate the mail servers responsible for accepting incoming email for a domain.",
+      "difficulty": "easy",
+      "tags": [
+        "dns",
+        "mx_record",
+        "email_servers"
+      ]
+    },
+    {
+      "id": "Q143",
+      "topic": "application_protocols",
+      "question": "Which DNS record is used to create an alias for another domain name?",
+      "options": [
+        "MX",
+        "A",
+        "CNAME",
+        "PTR"
+      ],
+      "answer": 2,
+      "explanation": "Canonical Name (CNAME) records alias one domain name to another canonical domain name.",
+      "difficulty": "easy",
+      "tags": [
+        "dns",
+        "cname_record",
+        "alias"
+      ]
+    },
+    {
+      "id": "Q144",
+      "topic": "application_protocols",
+      "question": "Which transport protocol is commonly used by DNS for normal queries?",
+      "options": [
+        "TCP only",
+        "UDP only",
+        "UDP, with TCP also used in specific cases",
+        "ICMP"
+      ],
+      "answer": 2,
+      "explanation": "Standard DNS lookups operate over UDP port 53 for speed, but TCP is used when query responses exceed 512 bytes or for zone transfers.",
+      "difficulty": "medium",
+      "tags": [
+        "dns",
+        "udp",
+        "tcp",
+        "transport_layer"
+      ]
+    },
+    {
+      "id": "Q145",
+      "topic": "application_protocols",
+      "question": "What is the default UDP port used by DHCP servers?",
+      "options": [
+        "53",
+        "67",
+        "68",
+        "69"
+      ],
+      "answer": 1,
+      "explanation": "DHCP servers listen on well-known UDP port 67 to receive requests from clients.",
+      "difficulty": "easy",
+      "tags": [
+        "dhcp",
+        "port_67",
+        "server_port"
+      ]
+    },
+    {
+      "id": "Q146",
+      "topic": "application_protocols",
+      "question": "What is the default UDP port used by DHCP clients?",
+      "options": [
+        "53",
+        "67",
+        "68",
+        "80"
+      ],
+      "answer": 2,
+      "explanation": "DHCP clients receive server responses and listen on UDP port 68.",
+      "difficulty": "easy",
+      "tags": [
+        "dhcp",
+        "port_68",
+        "client_port"
+      ]
+    },
+    {
+      "id": "Q147",
+      "topic": "application_protocols",
+      "question": "Which sequence correctly represents the DHCP DORA process?",
+      "options": [
+        "Discover → Offer → Request → Acknowledge",
+        "Discover → Request → Offer → Acknowledge",
+        "Offer → Discover → Request → Acknowledge",
+        "Request → Discover → Offer → Acknowledge"
+      ],
+      "answer": 0,
+      "explanation": "DHCP leases IP addresses via DORA: DHCPDISCOVER, DHCPOFFER, DHCPREQUEST, and DHCPACK.",
+      "difficulty": "easy",
+      "tags": [
+        "dhcp",
+        "dora",
+        "lease_process"
+      ]
+    },
+    {
+      "id": "Q148",
+      "topic": "application_protocols",
+      "question": "Which DHCP message is initially broadcast by a client searching for a DHCP server?",
+      "options": [
+        "DHCPACK",
+        "DHCPOFFER",
+        "DHCPDISCOVER",
+        "DHCPREQUEST"
+      ],
+      "answer": 2,
+      "explanation": "A client without an IP address broadcasts a DHCPDISCOVER message across the local subnet to locate available DHCP servers.",
+      "difficulty": "easy",
+      "tags": [
+        "dhcp",
+        "dhcpdiscover",
+        "broadcast"
+      ]
+    },
+    {
+      "id": "Q149",
+      "topic": "application_protocols",
+      "question": "Which DHCP message contains the IP configuration offered by a DHCP server?",
+      "options": [
+        "DHCPDISCOVER",
+        "DHCPOFFER",
+        "DHCPREQUEST",
+        "DHCPDECLINE"
+      ],
+      "answer": 1,
+      "explanation": "The DHCP server responds to a discover message with a DHCPOFFER containing an available IP address, lease time, and network parameters.",
+      "difficulty": "easy",
+      "tags": [
+        "dhcp",
+        "dhcpoffer",
+        "server_offer"
+      ]
+    },
+    {
+      "id": "Q150",
+      "topic": "application_protocols",
+      "question": "A DHCP client has received an offer and wants to accept it. Which message does it send?",
+      "options": [
+        "DHCPDISCOVER",
+        "DHCPOFFER",
+        "DHCPREQUEST",
+        "DHCPACK"
+      ],
+      "answer": 2,
+      "explanation": "The client broadcasts a DHCPREQUEST message to accept the offered IP lease and notify other servers that their offers were declined.",
+      "difficulty": "easy",
+      "tags": [
+        "dhcp",
+        "dhcprequest",
+        "lease_acceptance"
+      ]
+    }
+  ]
+}

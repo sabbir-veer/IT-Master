@@ -1,0 +1,1002 @@
+{
+  "dataset_id": "networking_mcq_batch_06_q251_q300",
+  "title": "Computer Networking MCQs (Batch 6: Q251 - Q300)",
+  "topics": {
+    "multiple_access_protocols": "Multiple Access Protocols (ALOHA, CSMA/CD, CSMA/CA)",
+    "wireless_networking": "Wireless Networking and IEEE 802.11 Standards",
+    "network_security": "Network Security, Firewalls, and Cryptography",
+    "congestion_control": "TCP Congestion Control and Traffic Shaping",
+    "network_tools_troubleshooting": "Network Diagnostics, Commands, and Troubleshooting Tools"
+  },
+  "questions": [
+    {
+      "id": "Q251",
+      "topic": "multiple_access_protocols",
+      "question": "What is the maximum theoretical channel utilization (throughput) of Pure ALOHA?",
+      "options": [
+        "18.4% (1 / 2e)",
+        "36.8% (1 / e)",
+        "50.0%",
+        "100.0%"
+      ],
+      "answer": 0,
+      "explanation": "Pure ALOHA achieves a maximum efficiency of S = G * e^(-2G) = 1 / (2e) ≈ 18.4% when G = 0.5.",
+      "difficulty": "medium",
+      "tags": [
+        "multiple_access",
+        "pure_aloha",
+        "throughput",
+        "vulnerable_period"
+      ]
+    },
+    {
+      "id": "Q252",
+      "topic": "multiple_access_protocols",
+      "question": "What is the maximum theoretical channel efficiency of Slotted ALOHA?",
+      "options": [
+        "18.4%",
+        "36.8% (1 / e)",
+        "50.0%",
+        "73.6%"
+      ],
+      "answer": 1,
+      "explanation": "Slotted ALOHA reduces the vulnerable period to one slot time, doubling the maximum throughput to S = G * e^(-G) = 1 / e ≈ 36.8% at G = 1.",
+      "difficulty": "medium",
+      "tags": [
+        "multiple_access",
+        "slotted_aloha",
+        "throughput",
+        "efficiency"
+      ]
+    },
+    {
+      "id": "Q253",
+      "topic": "multiple_access_protocols",
+      "question": "What is the vulnerable time period in Pure ALOHA if the frame transmission time is Tfr?",
+      "options": [
+        "0.5 * Tfr",
+        "Tfr",
+        "2 * Tfr",
+        "4 * Tfr"
+      ],
+      "answer": 2,
+      "explanation": "In Pure ALOHA, any transmission starting within the interval [t - Tfr, t + Tfr] causes a collision, making the vulnerable period 2 * Tfr.",
+      "difficulty": "medium",
+      "tags": [
+        "multiple_access",
+        "pure_aloha",
+        "vulnerable_time"
+      ]
+    },
+    {
+      "id": "Q254",
+      "topic": "multiple_access_protocols",
+      "question": "Which media access control protocol listens to the channel before transmitting data ('listen before talk')?",
+      "options": [
+        "Pure ALOHA",
+        "Slotted ALOHA",
+        "Polling",
+        "CSMA (Carrier Sense Multiple Access)"
+      ],
+      "answer": 3,
+      "explanation": "CSMA checks whether the transmission medium is idle or busy before attempting to transmit, significantly reducing collisions.",
+      "difficulty": "easy",
+      "tags": [
+        "multiple_access",
+        "csma",
+        "carrier_sense"
+      ]
+    },
+    {
+      "id": "Q255",
+      "topic": "multiple_access_protocols",
+      "question": "Which access control protocol is primarily implemented in legacy half-duplex wired Ethernet (IEEE 802.3)?",
+      "options": [
+        "CSMA/CD",
+        "CSMA/CA",
+        "Token Ring",
+        "TDMA"
+      ],
+      "answer": 0,
+      "explanation": "Classic Ethernet uses Carrier Sense Multiple Access with Collision Detection (CSMA/CD) to detect and abort collided transmissions.",
+      "difficulty": "easy",
+      "tags": [
+        "multiple_access",
+        "csma_cd",
+        "ethernet",
+        "ieee_802_3"
+      ]
+    },
+    {
+      "id": "Q256",
+      "topic": "multiple_access_protocols",
+      "question": "In CSMA/CD, what special signal is transmitted by a host upon detecting a collision to inform all other stations?",
+      "options": [
+        "RTS signal",
+        "Jam signal",
+        "CTS signal",
+        "ACK signal"
+      ],
+      "answer": 1,
+      "explanation": "Upon detecting a collision, the transmitting station immediately stops sending the frame and broadcasts a 32-to-48 bit jam signal so all nodes detect the collision.",
+      "difficulty": "easy",
+      "tags": [
+        "multiple_access",
+        "csma_cd",
+        "jam_signal",
+        "collision"
+      ]
+    },
+    {
+      "id": "Q257",
+      "topic": "multiple_access_protocols",
+      "question": "Which algorithm is used in CSMA/CD to determine the random backoff wait time after successive collisions?",
+      "options": [
+        "Dijkstra's Algorithm",
+        "Sliding Window Algorithm",
+        "Binary Exponential Backoff Algorithm",
+        "Diffie-Hellman Algorithm"
+      ],
+      "answer": 2,
+      "explanation": "CSMA/CD uses the Truncated Binary Exponential Backoff algorithm, where the backoff slot range [0, 2^k - 1] doubles with each collision up to k = 10.",
+      "difficulty": "medium",
+      "tags": [
+        "multiple_access",
+        "csma_cd",
+        "binary_exponential_backoff"
+      ]
+    },
+    {
+      "id": "Q258",
+      "topic": "multiple_access_protocols",
+      "question": "In CSMA/CD, what is the mathematical requirement for minimum frame transmission time (Tfr) relative to propagation time (Tp) to ensure reliable collision detection?",
+      "options": [
+        "Tfr >= Tp",
+        "Tfr <= Tp",
+        "Tfr < 2 * Tp",
+        "Tfr >= 2 * Tp"
+      ],
+      "answer": 3,
+      "explanation": "To detect a collision before finishing frame transmission, the transmission time must be at least twice the maximum one-way propagation delay: Tfr >= 2 * Tp.",
+      "difficulty": "hard",
+      "tags": [
+        "multiple_access",
+        "csma_cd",
+        "minimum_frame_size",
+        "formula"
+      ]
+    },
+    {
+      "id": "Q259",
+      "topic": "multiple_access_protocols",
+      "question": "What is the minimum frame size in standard 10 Mbps Ethernet (IEEE 802.3)?",
+      "options": [
+        "64 bytes (512 bits)",
+        "32 bytes (256 bits)",
+        "128 bytes (1024 bits)",
+        "1500 bytes"
+      ],
+      "answer": 0,
+      "explanation": "To guarantee collision detection over the maximum specified network diameter in 10 Mbps Ethernet, the minimum frame size is set to 64 bytes (512 bits).",
+      "difficulty": "easy",
+      "tags": [
+        "multiple_access",
+        "ethernet",
+        "minimum_frame_size",
+        "bytes"
+      ]
+    },
+    {
+      "id": "Q260",
+      "topic": "multiple_access_protocols",
+      "question": "Why is CSMA/CD unsuitable for wireless LANs (Wi-Fi), requiring the use of CSMA/CA instead?",
+      "options": [
+        "Wireless signals travel too slowly compared to electrical signals",
+        "Transceivers cannot easily transmit and detect weak collision signals simultaneously (hidden terminal problem)",
+        "Wireless frames do not contain MAC addresses",
+        "Wireless networks do not use Layer 2 protocols"
+      ],
+      "answer": 1,
+      "explanation": "In wireless transmission, the station's own high-power transmission drowns out incoming signals, making collision detection during transmission impractical. Hence, collision avoidance (CSMA/CA) is used.",
+      "difficulty": "medium",
+      "tags": [
+        "multiple_access",
+        "csma_ca",
+        "wireless",
+        "collision_avoidance"
+      ]
+    },
+    {
+      "id": "Q261",
+      "topic": "wireless_networking",
+      "question": "Which IEEE standard family defines Wireless Local Area Networks (WLAN / Wi-Fi)?",
+      "options": [
+        "IEEE 802.3",
+        "IEEE 802.5",
+        "IEEE 802.11",
+        "IEEE 802.15"
+      ],
+      "answer": 2,
+      "explanation": "IEEE 802.11 is the internationally recognized standard governing wireless local area networks (Wi-Fi).",
+      "difficulty": "easy",
+      "tags": [
+        "wireless_networking",
+        "ieee_802_11",
+        "wifi_standards"
+      ]
+    },
+    {
+      "id": "Q262",
+      "topic": "wireless_networking",
+      "question": "Which mechanism is used in IEEE 802.11 wireless networks to solve the Hidden Terminal Problem?",
+      "options": [
+        "Token Ring passing",
+        "Store-and-forward switching",
+        "Parity checking",
+        "RTS/CTS (Request to Send / Clear to Send)"
+      ],
+      "answer": 3,
+      "explanation": "The RTS/CTS four-way handshake reserves the wireless medium at both sender and receiver, preventing hidden terminals from transmitting during data transfer.",
+      "difficulty": "medium",
+      "tags": [
+        "wireless_networking",
+        "rts_cts",
+        "hidden_terminal",
+        "csma_ca"
+      ]
+    },
+    {
+      "id": "Q263",
+      "topic": "wireless_networking",
+      "question": "Which radio frequency bands are most commonly utilized by consumer Wi-Fi networks?",
+      "options": [
+        "2.4 GHz and 5 GHz",
+        "900 MHz and 1.8 GHz",
+        "10 GHz and 20 GHz",
+        "50 MHz and 100 MHz"
+      ],
+      "answer": 0,
+      "explanation": "Standard Wi-Fi operates in the unlicensed 2.4 GHz and 5 GHz Industrial, Scientific, and Medical (ISM) radio bands (as well as 6 GHz in Wi-Fi 6E).",
+      "difficulty": "easy",
+      "tags": [
+        "wireless_networking",
+        "frequency_bands",
+        "2_4_ghz",
+        "5_ghz"
+      ]
+    },
+    {
+      "id": "Q264",
+      "topic": "wireless_networking",
+      "question": "Which Wi-Fi generation is standardized under IEEE 802.11ax?",
+      "options": [
+        "Wi-Fi 4",
+        "Wi-Fi 6",
+        "Wi-Fi 5",
+        "Wi-Fi 3"
+      ],
+      "answer": 1,
+      "explanation": "IEEE 802.11ax is branded as Wi-Fi 6, featuring OFDMA and MU-MIMO for high device density and efficiency.",
+      "difficulty": "medium",
+      "tags": [
+        "wireless_networking",
+        "wifi_6",
+        "ieee_802_11ax",
+        "standards"
+      ]
+    },
+    {
+      "id": "Q265",
+      "topic": "wireless_networking",
+      "question": "What is the human-readable identifier assigned to a wireless local area network broadcast by an Access Point?",
+      "options": [
+        "MAC Address",
+        "BSSID",
+        "SSID (Service Set Identifier)",
+        "Default Gateway"
+      ],
+      "answer": 2,
+      "explanation": "The SSID (Service Set Identifier) is the 32-character alphanumeric name that identifies a wireless network to users.",
+      "difficulty": "easy",
+      "tags": [
+        "wireless_networking",
+        "ssid",
+        "access_point"
+      ]
+    },
+    {
+      "id": "Q266",
+      "topic": "wireless_networking",
+      "question": "What is the BSSID (Basic Service Set Identifier) in an infrastructure wireless network?",
+      "options": [
+        "The IP address of the DHCP server",
+        "The subnet mask of the wireless network",
+        "The domain name of the organization",
+        "The MAC address of the Access Point's wireless radio"
+      ],
+      "answer": 3,
+      "explanation": "BSSID uniquely identifies a specific Basic Service Set and corresponds to the Layer-2 MAC address of the Access Point radio interface.",
+      "difficulty": "medium",
+      "tags": [
+        "wireless_networking",
+        "bssid",
+        "mac_address",
+        "access_point"
+      ]
+    },
+    {
+      "id": "Q267",
+      "topic": "wireless_networking",
+      "question": "Which wireless security protocol uses the Simultaneous Authentication of Equals (SAE) handshake to prevent offline dictionary attacks?",
+      "options": [
+        "WPA3",
+        "WEP",
+        "WPA",
+        "WPA2-PSK"
+      ],
+      "answer": 0,
+      "explanation": "WPA3 replaces the vulnerable 4-way PSK handshake with SAE (Dragonfly handshake), protecting passwords against offline dictionary and brute-force attacks.",
+      "difficulty": "medium",
+      "tags": [
+        "wireless_networking",
+        "wpa3",
+        "security",
+        "sae_handshake"
+      ]
+    },
+    {
+      "id": "Q268",
+      "topic": "wireless_networking",
+      "question": "Which IEEE standard governs Bluetooth wireless communication?",
+      "options": [
+        "IEEE 802.11",
+        "IEEE 802.15.1",
+        "IEEE 802.16",
+        "IEEE 802.3"
+      ],
+      "answer": 1,
+      "explanation": "IEEE 802.15.1 defines Wireless Personal Area Networks (WPAN) based on Bluetooth wireless technology.",
+      "difficulty": "easy",
+      "tags": [
+        "wireless_networking",
+        "bluetooth",
+        "ieee_802_15_1",
+        "pan"
+      ]
+    },
+    {
+      "id": "Q269",
+      "topic": "wireless_networking",
+      "question": "In 2.4 GHz Wi-Fi deployments in North America and Bangladesh, which three non-overlapping channels are conventionally chosen?",
+      "options": [
+        "Channels 1, 2, and 3",
+        "Channels 1, 6, and 11",
+        "Channels 2, 4, and 6",
+        "Channels 6, 8, and 10"
+      ],
+      "answer": 1,
+      "explanation": "Channels 1, 6, and 11 each have 22 MHz of channel width spaced 25 MHz apart, meaning they do not overlap or cause co-channel interference in 2.4 GHz band.",
+      "difficulty": "medium",
+      "tags": [
+        "wireless_networking",
+        "2_4_ghz",
+        "non_overlapping_channels",
+        "rf_design"
+      ]
+    },
+    {
+      "id": "Q270",
+      "topic": "wireless_networking",
+      "question": "A wireless network operating without a central Access Point where devices communicate directly with one another is known as an:",
+      "options": [
+        "Infrastructure network",
+        "Ad-hoc (IBSS) network",
+        "Extended Service Set",
+        "Enterprise network"
+      ],
+      "answer": 1,
+      "explanation": "In an Independent Basic Service Set (IBSS) or ad-hoc wireless network, peer stations communicate directly with one another without any central access point.",
+      "difficulty": "easy",
+      "tags": [
+        "wireless_networking",
+        "ad_hoc",
+        "ibss",
+        "peer_to_peer"
+      ]
+    },
+    {
+      "id": "Q271",
+      "topic": "network_security",
+      "question": "Which type of firewall inspects individual packets against access control lists (ACLs) based solely on source/destination IP, port, and protocol, without maintaining connection state?",
+      "options": [
+        "Stateful Inspection Firewall",
+        "Application Layer Gateway",
+        "Packet Filtering Firewall (Stateless)",
+        "Next-Generation Firewall (NGFW)"
+      ],
+      "answer": 2,
+      "explanation": "A stateless packet filtering firewall inspects packets in isolation based on static Layer 3 and Layer 4 header fields without tracking conversation states.",
+      "difficulty": "medium",
+      "tags": [
+        "network_security",
+        "firewall",
+        "packet_filtering",
+        "stateless"
+      ]
+    },
+    {
+      "id": "Q272",
+      "topic": "network_security",
+      "question": "Which type of firewall tracks the state of active TCP connections and inspects packets within the context of established sessions?",
+      "options": [
+        "Repeater",
+        "Stateful Inspection Firewall",
+        "Stateless packet filter",
+        "Hub"
+      ],
+      "answer": 1,
+      "explanation": "Stateful firewalls maintain a state table of active sessions, automatically allowing returning traffic corresponding to outbound requests while blocking unsolicited inbound packets.",
+      "difficulty": "easy",
+      "tags": [
+        "network_security",
+        "stateful_firewall",
+        "connection_tracking"
+      ]
+    },
+    {
+      "id": "Q273",
+      "topic": "network_security",
+      "question": "What is the primary operational difference between symmetric and asymmetric key cryptography?",
+      "options": [
+        "Symmetric uses one shared secret key, while asymmetric uses a mathematically paired public and private key",
+        "Symmetric is used only for passwords, while asymmetric is used only for Wi-Fi",
+        "Symmetric is asymmetric, while asymmetric is one-way hashing",
+        "Symmetric cannot encrypt data, while asymmetric encrypts text"
+      ],
+      "answer": 0,
+      "explanation": "Symmetric encryption uses the same identical secret key for encryption and decryption; asymmetric encryption uses a public key to encrypt and a matching private key to decrypt.",
+      "difficulty": "easy",
+      "tags": [
+        "network_security",
+        "cryptography",
+        "symmetric",
+        "asymmetric"
+      ]
+    },
+    {
+      "id": "Q274",
+      "topic": "network_security",
+      "question": "Which of the following encryption algorithms is classified as an asymmetric (public-key) cipher?",
+      "options": [
+        "AES",
+        "DES",
+        "RSA",
+        "Blowfish"
+      ],
+      "answer": 2,
+      "explanation": "RSA (Rivest-Shamir-Adleman) is a widely used public-key asymmetric algorithm based on the difficulty of factoring large prime products.",
+      "difficulty": "easy",
+      "tags": [
+        "network_security",
+        "rsa",
+        "asymmetric_encryption",
+        "public_key"
+      ]
+    },
+    {
+      "id": "Q275",
+      "topic": "network_security",
+      "question": "Which symmetric block cipher standard was adopted by NIST to replace obsolete DES and 3DES?",
+      "options": [
+        "RSA",
+        "Diffie-Hellman",
+        "MD5",
+        "AES (Advanced Encryption Standard)"
+      ],
+      "answer": 3,
+      "explanation": "Advanced Encryption Standard (AES), based on the Rijndael cipher with 128, 192, or 256-bit keys, is the global symmetric encryption standard.",
+      "difficulty": "easy",
+      "tags": [
+        "network_security",
+        "aes",
+        "symmetric_encryption",
+        "nist_standard"
+      ]
+    },
+    {
+      "id": "Q276",
+      "topic": "network_security",
+      "question": "What security properties are provided by a cryptographic hash function such as SHA-256?",
+      "options": [
+        "Data Integrity and Non-reversibility",
+        "Data Confidentiality and Decryption",
+        "Network routing and path calculation",
+        "IP address translation and port multiplexing"
+      ],
+      "answer": 0,
+      "explanation": "Cryptographic hash functions generate fixed-length digital fingerprints used to verify message integrity; they are strictly one-way and cannot be decrypted.",
+      "difficulty": "medium",
+      "tags": [
+        "network_security",
+        "hash_function",
+        "sha_256",
+        "integrity"
+      ]
+    },
+    {
+      "id": "Q277",
+      "topic": "network_security",
+      "question": "In public key infrastructure (PKI), how is a digital signature created by the sender?",
+      "options": [
+        "By encrypting the message with the receiver's public key",
+        "By encrypting the hash of the message with the sender's private key",
+        "By encrypting the document with a shared symmetric key",
+        "By hashing the receiver's IP address"
+      ],
+      "answer": 1,
+      "explanation": "A digital signature is created by hashing the document and encrypting that hash with the sender's private key, providing authenticity, integrity, and non-repudiation.",
+      "difficulty": "medium",
+      "tags": [
+        "network_security",
+        "digital_signature",
+        "pki",
+        "non_repudiation"
+      ]
+    },
+    {
+      "id": "Q278",
+      "topic": "network_security",
+      "question": "Which attack overwhelms a target server with bogus TCP connection requests by sending SYN packets without completing the handshake?",
+      "options": [
+        "Man-in-the-Middle (MitM) attack",
+        "SQL Injection",
+        "TCP SYN Flood (DoS/DDoS)",
+        "ARP Spoofing"
+      ],
+      "answer": 2,
+      "explanation": "A TCP SYN flood exhausts the server's connection backlog memory table by sending half-open SYN requests without ever sending the completing ACK.",
+      "difficulty": "easy",
+      "tags": [
+        "network_security",
+        "syn_flood",
+        "dos_attack",
+        "ddos"
+      ]
+    },
+    {
+      "id": "Q279",
+      "topic": "network_security",
+      "question": "Which attack falsifies ARP messages across a local subnet to associate the attacker's MAC address with the IP address of an authorized default gateway?",
+      "options": [
+        "DNS Amplification",
+        "Smurf Attack",
+        "Ping of Death",
+        "ARP Poisoning / Spoofing"
+      ],
+      "answer": 3,
+      "explanation": "ARP Poisoning floods illegitimate ARP responses onto the local LAN, tricking hosts into redirecting their traffic through the attacker's machine (enabling Man-in-the-Middle).",
+      "difficulty": "easy",
+      "tags": [
+        "network_security",
+        "arp_poisoning",
+        "mitm",
+        "layer_2_security"
+      ]
+    },
+    {
+      "id": "Q280",
+      "topic": "network_security",
+      "question": "What is the primary functional difference between an Intrusion Detection System (IDS) and an Intrusion Prevention System (IPS)?",
+      "options": [
+        "IDS passively monitors and alerts on suspicious traffic, while IPS sits inline to actively detect and block malicious traffic",
+        "IDS is a hardware router, while IPS is a software web browser",
+        "IDS handles encryption, while IPS handles DHCP address leases",
+        "IDS only works on wireless networks, while IPS only works on fiber cables"
+      ],
+      "answer": 0,
+      "explanation": "An IDS monitors mirrored network traffic and sends alerts upon detecting anomalies, whereas an in-line IPS actively drops malicious packets in real time.",
+      "difficulty": "medium",
+      "tags": [
+        "network_security",
+        "ids",
+        "ips",
+        "traffic_inspection"
+      ]
+    },
+    {
+      "id": "Q281",
+      "topic": "congestion_control",
+      "question": "In TCP congestion control, how does the Congestion Window (cwnd) grow during the Slow Start phase for each acknowledged RTT?",
+      "options": [
+        "Linearly by 1 MSS each RTT",
+        "Exponentially (doubling each RTT)",
+        "It remains constant",
+        "It halves each RTT"
+      ],
+      "answer": 1,
+      "explanation": "During Slow Start, cwnd increases by 1 MSS for every received ACK, effectively doubling the congestion window each round-trip time (RTT).",
+      "difficulty": "medium",
+      "tags": [
+        "congestion_control",
+        "slow_start",
+        "exponential_growth",
+        "cwnd"
+      ]
+    },
+    {
+      "id": "Q282",
+      "topic": "congestion_control",
+      "question": "At what threshold does TCP transition from the Slow Start phase into the Congestion Avoidance phase?",
+      "options": [
+        "Maximum Transmission Unit (MTU)",
+        "Maximum Segment Size (MSS)",
+        "Slow Start Threshold (ssthresh)",
+        "Receiver Window Size (rwnd)"
+      ],
+      "answer": 2,
+      "explanation": "When cwnd reaches or exceeds ssthresh (Slow Start Threshold), TCP switches from exponential growth to linear Congestion Avoidance.",
+      "difficulty": "easy",
+      "tags": [
+        "congestion_control",
+        "ssthresh",
+        "phase_transition"
+      ]
+    },
+    {
+      "id": "Q283",
+      "topic": "congestion_control",
+      "question": "In the Congestion Avoidance phase of TCP, by how much does the congestion window (cwnd) increase each RTT?",
+      "options": [
+        "Doubles each RTT",
+        "Increases by 4 MSS",
+        "Decreases by half",
+        "Increases linearly by 1 MSS per RTT"
+      ],
+      "answer": 3,
+      "explanation": "During Congestion Avoidance, TCP adopts Additive Increase, growing cwnd by approximately 1 MSS per RTT to probe for capacity gently.",
+      "difficulty": "easy",
+      "tags": [
+        "congestion_control",
+        "congestion_avoidance",
+        "additive_increase"
+      ]
+    },
+    {
+      "id": "Q284",
+      "topic": "congestion_control",
+      "question": "How many duplicate ACKs must a TCP sender receive to trigger Fast Retransmit without waiting for the retransmission timer to expire?",
+      "options": [
+        "3 duplicate ACKs (4 identical ACKs total)",
+        "1 duplicate ACK",
+        "5 duplicate ACKs",
+        "10 duplicate ACKs"
+      ],
+      "answer": 0,
+      "explanation": "Receipt of 3 duplicate ACKs indicates that a specific segment was lost while later segments arrived safely, triggering immediate Fast Retransmit.",
+      "difficulty": "medium",
+      "tags": [
+        "congestion_control",
+        "fast_retransmit",
+        "duplicate_acks",
+        "tcp"
+      ]
+    },
+    {
+      "id": "Q285",
+      "topic": "congestion_control",
+      "question": "What action is taken by TCP Tahoe when a retransmission timeout (RTO) occurs?",
+      "options": [
+        "cwnd remains unchanged",
+        "ssthresh is set to cwnd/2 and cwnd is reset to 1 MSS, returning to Slow Start",
+        "cwnd is doubled and timeout is ignored",
+        "Connection is closed immediately"
+      ],
+      "answer": 1,
+      "explanation": "Under TCP Tahoe, severe congestion signaled by a timeout sets ssthresh = cwnd / 2 and resets cwnd to 1 MSS, restarting in Slow Start.",
+      "difficulty": "medium",
+      "tags": [
+        "congestion_control",
+        "tcp_tahoe",
+        "timeout",
+        "ssthresh_reset"
+      ]
+    },
+    {
+      "id": "Q286",
+      "topic": "congestion_control",
+      "question": "What algorithm enforces a rigid, steady output transmission rate regardless of how bursty the incoming traffic is?",
+      "options": [
+        "Token Bucket Algorithm",
+        "Dijkstra's Algorithm",
+        "Leaky Bucket Algorithm",
+        "Spanning Tree Algorithm"
+      ],
+      "answer": 2,
+      "explanation": "The Leaky Bucket algorithm absorbs traffic bursts into a buffer and leaks packets out at a strictly uniform, constant data rate.",
+      "difficulty": "medium",
+      "tags": [
+        "congestion_control",
+        "traffic_shaping",
+        "leaky_bucket"
+      ]
+    },
+    {
+      "id": "Q287",
+      "topic": "congestion_control",
+      "question": "Which traffic shaping mechanism allows traffic bursts up to a specified capacity while maintaining an agreed average rate over time?",
+      "options": [
+        "Stop-and-Wait",
+        "Pure ALOHA",
+        "Packet Filtering",
+        "Token Bucket Algorithm"
+      ],
+      "answer": 3,
+      "explanation": "The Token Bucket algorithm accumulates tokens at a constant rate; if sufficient tokens are present, bursty traffic can be transmitted immediately.",
+      "difficulty": "medium",
+      "tags": [
+        "congestion_control",
+        "token_bucket",
+        "traffic_policing"
+      ]
+    },
+    {
+      "id": "Q288",
+      "topic": "congestion_control",
+      "question": "What determines the effective window size available to a TCP sender when transmitting data?",
+      "options": [
+        "Minimum of (Congestion Window cwnd, Receiver Advertised Window rwnd)",
+        "Maximum of (cwnd, rwnd)",
+        "cwnd + rwnd",
+        "Strictly rwnd regardless of network condition"
+      ],
+      "answer": 0,
+      "explanation": "To respect both network capacity and receiver buffer capacity, the sender's usable window is min(cwnd, rwnd).",
+      "difficulty": "medium",
+      "tags": [
+        "congestion_control",
+        "effective_window",
+        "cwnd",
+        "rwnd"
+      ]
+    },
+    {
+      "id": "Q289",
+      "topic": "congestion_control",
+      "question": "Which mechanism notifies intermediate routers of congestion by marking bits in the IP header rather than dropping packets?",
+      "options": [
+        "TTL",
+        "ECN (Explicit Congestion Notification)",
+        "ARP",
+        "CRC"
+      ],
+      "answer": 1,
+      "explanation": "ECN uses 2 bits in the IPv4/IPv6 DiffServ field to signal imminent router buffer congestion without dropping packets.",
+      "difficulty": "hard",
+      "tags": [
+        "congestion_control",
+        "ecn",
+        "ip_header",
+        "active_queue_management"
+      ]
+    },
+    {
+      "id": "Q290",
+      "topic": "congestion_control",
+      "question": "What general principle describes TCP's congestion response of probing bandwidth with linear increases and cutting the window in half upon packet loss?",
+      "options": [
+        "MIMD (Multiplicative Increase Multiplicative Decrease)",
+        "AIAD (Additive Increase Additive Decrease)",
+        "AIMD (Additive Increase Multiplicative Decrease)",
+        "MIAD (Multiplicative Increase Additive Decrease)"
+      ],
+      "answer": 2,
+      "explanation": "AIMD is the foundational mathematical stability model of TCP congestion control: increase linearly when clear, halve multiplicatively when congested.",
+      "difficulty": "medium",
+      "tags": [
+        "congestion_control",
+        "aimd",
+        "tcp_congestion_principles"
+      ]
+    },
+    {
+      "id": "Q291",
+      "topic": "network_tools_troubleshooting",
+      "question": "Which command-line utility is used on Windows operating systems to display current network adapter IP configuration, subnet mask, and default gateway?",
+      "options": [
+        "ping",
+        "tracert",
+        "netstat",
+        "ipconfig"
+      ],
+      "answer": 3,
+      "explanation": "The `ipconfig` command displays active IP addresses, subnet masks, and default gateways on Windows (`ifconfig` or `ip addr` on Linux).",
+      "difficulty": "easy",
+      "tags": [
+        "network_tools",
+        "ipconfig",
+        "windows",
+        "troubleshooting"
+      ]
+    },
+    {
+      "id": "Q292",
+      "topic": "network_tools_troubleshooting",
+      "question": "Which command displays active network connections, listening ports, and routing tables on a local host?",
+      "options": [
+        "netstat",
+        "arp -a",
+        "nslookup",
+        "hostname"
+      ],
+      "answer": 0,
+      "explanation": "The `netstat` (network statistics) command displays active TCP/UDP connections, listening sockets, and routing table metrics.",
+      "difficulty": "easy",
+      "tags": [
+        "network_tools",
+        "netstat",
+        "active_connections",
+        "ports"
+      ]
+    },
+    {
+      "id": "Q293",
+      "topic": "network_tools_troubleshooting",
+      "question": "Which command-line tool is used to query DNS servers to find IP addresses associated with a domain name?",
+      "options": [
+        "tracert",
+        "nslookup",
+        "route",
+        "nbtstat"
+      ],
+      "answer": 1,
+      "explanation": "`nslookup` (name server lookup) and `dig` are dedicated utilities used for querying Domain Name System (DNS) servers.",
+      "difficulty": "easy",
+      "tags": [
+        "network_tools",
+        "nslookup",
+        "dns_query",
+        "troubleshooting"
+      ]
+    },
+    {
+      "id": "Q294",
+      "topic": "network_tools_troubleshooting",
+      "question": "Which command displays the current local ARP cache containing IP-to-MAC address mappings?",
+      "options": [
+        "ipconfig /all",
+        "netstat -r",
+        "arp -a",
+        "ping -t"
+      ],
+      "answer": 2,
+      "explanation": "The `arp -a` command displays the host's current Address Resolution Protocol (ARP) table mappings.",
+      "difficulty": "easy",
+      "tags": [
+        "network_tools",
+        "arp_cache",
+        "arp_command",
+        "mac_tables"
+      ]
+    },
+    {
+      "id": "Q295",
+      "topic": "network_tools_troubleshooting",
+      "question": "Which tool is an open-source, widely used graphical packet analyzer for network troubleshooting and protocol analysis?",
+      "options": [
+        "Putty",
+        "Notepad++",
+        "VirtualBox",
+        "Wireshark"
+      ],
+      "answer": 3,
+      "explanation": "Wireshark is the standard graphical network packet analyzer used to capture and inspect live network traffic down to individual frame fields.",
+      "difficulty": "easy",
+      "tags": [
+        "network_tools",
+        "wireshark",
+        "packet_sniffer",
+        "packet_analysis"
+      ]
+    },
+    {
+      "id": "Q296",
+      "topic": "network_tools_troubleshooting",
+      "question": "Which command-line packet analyzer is native to Unix/Linux systems for capturing network traffic in terminal sessions?",
+      "options": [
+        "tcpdump",
+        "grep",
+        "chown",
+        "sed"
+      ],
+      "answer": 0,
+      "explanation": "`tcpdump` is the standard command-line packet sniffing utility on Linux/Unix systems for capturing and filtering network traffic.",
+      "difficulty": "easy",
+      "tags": [
+        "network_tools",
+        "tcpdump",
+        "linux_networking",
+        "packet_capture"
+      ]
+    },
+    {
+      "id": "Q297",
+      "topic": "network_tools_troubleshooting",
+      "question": "What does a successful ping response from IP address 127.0.0.1 verify?",
+      "options": [
+        "The external Internet connection is active",
+        "The local TCP/IP protocol stack is properly installed and functioning",
+        "The default gateway router is operational",
+        "The DNS server is resolving domain names"
+      ],
+      "answer": 1,
+      "explanation": "Pinging the loopback address 127.0.0.1 verifies that the host's internal network stack, TCP/IP software, and drivers are operating correctly.",
+      "difficulty": "easy",
+      "tags": [
+        "network_tools",
+        "ping",
+        "loopback",
+        "stack_verification"
+      ]
+    },
+    {
+      "id": "Q298",
+      "topic": "network_tools_troubleshooting",
+      "question": "A network administrator wants to trace the exact route and measure transit delays of packets across all intermediate routers to a remote host. Which utility should be used?",
+      "options": [
+        "netstat",
+        "arp",
+        "traceroute (tracert on Windows)",
+        "ipconfig"
+      ],
+      "answer": 2,
+      "explanation": "`traceroute` (`tracert` on Windows) tracks the path packets take to a destination by manipulating packet TTL values and recording intermediate router replies.",
+      "difficulty": "easy",
+      "tags": [
+        "network_tools",
+        "traceroute",
+        "tracert",
+        "hop_by_hop"
+      ]
+    },
+    {
+      "id": "Q299",
+      "topic": "network_tools_troubleshooting",
+      "question": "Which command releases and renews the IP address lease assigned by a DHCP server on a Windows host?",
+      "options": [
+        "ping /renew",
+        "netstat -renew",
+        "route flush",
+        "ipconfig /release followed by ipconfig /renew"
+      ],
+      "answer": 3,
+      "explanation": "`ipconfig /release` sends a DHCPRELEASE message to drop the current lease, and `ipconfig /renew` initiates a new DORA exchange to obtain a lease.",
+      "difficulty": "easy",
+      "tags": [
+        "network_tools",
+        "dhcp_renew",
+        "ipconfig",
+        "windows_troubleshooting"
+      ]
+    },
+    {
+      "id": "Q300",
+      "topic": "network_tools_troubleshooting",
+      "question": "Which powerful utility is primarily used by network administrators for port scanning, network discovery, and vulnerability auditing?",
+      "options": [
+        "Nmap",
+        "Telnet",
+        "FTP",
+        "TFTP"
+      ],
+      "answer": 0,
+      "explanation": "Nmap (Network Mapper) is the preeminent open-source security tool used for network discovery, port scanning, OS fingerprinting, and service enumeration.",
+      "difficulty": "easy",
+      "tags": [
+        "network_tools",
+        "nmap",
+        "port_scanning",
+        "security_auditing"
+      ]
+    }
+  ]
+}
