@@ -1,0 +1,611 @@
+{
+  "dataset_id": "dbms_database_keys_bd_it_prep",
+  "title": "Database Keys",
+  "topics": {
+    "super_key": "Super Key",
+    "candidate_key": "Candidate Key",
+    "primary_key": "Primary Key",
+    "foreign_key": "Foreign Key",
+    "unique_key": "Unique Key",
+    "composite_key": "Composite Key",
+    "alternate_key": "Alternate Key",
+    "surrogate_key": "Surrogate Key",
+    "partial_key": "Partial Key",
+    "key_comparisons": "Key Comparisons and Integrity Constraints"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "topic": "super_key",
+      "question": "Which of the following is true about a Super Key?",
+      "options": [
+        "It can never contain more than one attribute",
+        "It is always a minimal set of attributes",
+        "It uniquely identifies a record in a table",
+        "It cannot contain a candidate key"
+      ],
+      "answer": 2,
+      "explanation": "A Super Key is defined as any set of one or more attributes that can uniquely identify a record in a table, though it is not necessarily minimal.",
+      "difficulty": "easy",
+      "tags": [
+        "super_key",
+        "dbms_basics",
+        "record_identification"
+      ],
+      "time_seconds": 45
+    },
+    {
+      "id": "Q002",
+      "topic": "candidate_key",
+      "question": "What differentiates a Candidate Key from a Super Key?",
+      "options": [
+        "Candidate Key is a superset of Super Key",
+        "Candidate Key contains only numeric values",
+        "Candidate Key is a minimal Super Key",
+        "Candidate Key can have duplicate values"
+      ],
+      "answer": 2,
+      "explanation": "A Candidate Key is a minimal Super Key with no unnecessary attributes; removing any attribute breaks uniqueness.",
+      "difficulty": "medium",
+      "tags": [
+        "candidate_key",
+        "super_key",
+        "minimality"
+      ],
+      "time_seconds": 45
+    },
+    {
+      "id": "Q003",
+      "topic": "primary_key",
+      "question": "How many Primary Keys can a table have?",
+      "options": [
+        "One",
+        "Two",
+        "Unlimited",
+        "One per foreign key"
+      ],
+      "answer": 0,
+      "explanation": "A relational table can have only one Primary Key, although it can be composed of multiple columns.",
+      "difficulty": "easy",
+      "tags": [
+        "primary_key",
+        "table_constraints"
+      ],
+      "time_seconds": 30
+    },
+    {
+      "id": "Q004",
+      "topic": "foreign_key",
+      "question": "Which key is used to reference the primary key of another table?",
+      "options": [
+        "Alternate Key",
+        "Foreign Key",
+        "Composite Key",
+        "Super Key"
+      ],
+      "answer": 1,
+      "explanation": "A Foreign Key is a column or set of columns in one table that references the primary key (or unique key) in another table.",
+      "difficulty": "easy",
+      "tags": [
+        "foreign_key",
+        "referential_integrity",
+        "relationships"
+      ],
+      "time_seconds": 30
+    },
+    {
+      "id": "Q005",
+      "topic": "unique_key",
+      "question": "Which of the following keys allows null values and ensures all values are unique?",
+      "options": [
+        "Primary Key",
+        "Foreign Key",
+        "Unique Key",
+        "Composite Key"
+      ],
+      "answer": 2,
+      "explanation": "A Unique Key constraint ensures all non-null values are distinct and allows NULL values, unlike a Primary Key.",
+      "difficulty": "easy",
+      "tags": [
+        "unique_key",
+        "null_values",
+        "constraints"
+      ],
+      "time_seconds": 30
+    },
+    {
+      "id": "Q006",
+      "topic": "composite_key",
+      "question": "A Composite Key is:",
+      "options": [
+        "A key formed from a single column",
+        "A key that is derived from a primary key",
+        "A key formed from two or more attributes",
+        "A foreign key in another table"
+      ],
+      "answer": 2,
+      "explanation": "A Composite Key is composed of two or more columns that together uniquely identify a record in a table.",
+      "difficulty": "easy",
+      "tags": [
+        "composite_key",
+        "multiple_attributes"
+      ],
+      "time_seconds": 45
+    },
+    {
+      "id": "Q007",
+      "topic": "alternate_key",
+      "question": "What is an Alternate Key?",
+      "options": [
+        "A key used when the primary key fails",
+        "A candidate key not chosen as primary key",
+        "A composite foreign key",
+        "A special type of foreign key"
+      ],
+      "answer": 1,
+      "explanation": "An Alternate Key is any candidate key that is not selected as the table's primary key; it is also termed a secondary key.",
+      "difficulty": "easy",
+      "tags": [
+        "alternate_key",
+        "candidate_key",
+        "secondary_key"
+      ],
+      "time_seconds": 45
+    },
+    {
+      "id": "Q008",
+      "topic": "surrogate_key",
+      "question": "Which of the following best defines a Surrogate Key?",
+      "options": [
+        "A composite key derived from candidate keys",
+        "A user-generated key used to replace the primary key",
+        "A system-generated unique identifier used as a primary key",
+        "A natural key used as a foreign key"
+      ],
+      "answer": 2,
+      "explanation": "A Surrogate Key is an artificial, system-generated unique identifier (such as an auto-increment number or UUID) with no business meaning.",
+      "difficulty": "medium",
+      "tags": [
+        "surrogate_key",
+        "synthetic_key",
+        "system_generated"
+      ],
+      "time_seconds": 45
+    },
+    {
+      "id": "Q009",
+      "topic": "partial_key",
+      "question": "A Partial Key is typically used in the context of:",
+      "options": [
+        "Normalization",
+        "Weak entities",
+        "Super classes",
+        "Foreign keys"
+      ],
+      "answer": 1,
+      "explanation": "A Partial Key (or discriminator) is used in weak entity sets to distinguish records within the context of a related strong entity.",
+      "difficulty": "medium",
+      "tags": [
+        "partial_key",
+        "weak_entity",
+        "discriminator"
+      ],
+      "time_seconds": 30
+    },
+    {
+      "id": "Q010",
+      "topic": "primary_key",
+      "question": "Which key must have a unique value and cannot be NULL?",
+      "options": [
+        "Foreign Key",
+        "Unique Key",
+        "Primary Key",
+        "Partial Key"
+      ],
+      "answer": 2,
+      "explanation": "A Primary Key must have strictly unique values for every row and cannot accept NULL values under any circumstance.",
+      "difficulty": "easy",
+      "tags": [
+        "primary_key",
+        "not_null",
+        "entity_integrity"
+      ],
+      "time_seconds": 30
+    },
+    {
+      "id": "Q011",
+      "topic": "candidate_key",
+      "question": "A table can have:",
+      "options": [
+        "Only one candidate key",
+        "Multiple candidate keys, but one primary key",
+        "One primary key and one super key",
+        "Only alternate keys"
+      ],
+      "answer": 1,
+      "explanation": "A table can have multiple candidate keys, but only one of those candidate keys is chosen to be the primary key.",
+      "difficulty": "easy",
+      "tags": [
+        "candidate_key",
+        "primary_key",
+        "table_structure"
+      ],
+      "time_seconds": 45
+    },
+    {
+      "id": "Q012",
+      "topic": "foreign_key",
+      "question": "Which of the following is not true about a Foreign Key?",
+      "options": [
+        "It enforces referential integrity",
+        "It can accept null values",
+        "It must be unique",
+        "It references a primary key in another table"
+      ],
+      "answer": 2,
+      "explanation": "A Foreign Key does not have to be unique; it can contain duplicate values to establish one-to-many relationships.",
+      "difficulty": "medium",
+      "tags": [
+        "foreign_key",
+        "referential_integrity",
+        "constraints"
+      ],
+      "time_seconds": 45
+    },
+    {
+      "id": "Q013",
+      "topic": "foreign_key",
+      "question": "The key that helps in establishing relationships between two tables is:",
+      "options": [
+        "Unique Key",
+        "Primary Key",
+        "Alternate Key",
+        "Foreign Key"
+      ],
+      "answer": 3,
+      "explanation": "A Foreign Key creates links between tables by referencing the primary or unique key of the parent table.",
+      "difficulty": "easy",
+      "tags": [
+        "foreign_key",
+        "relationships",
+        "table_links"
+      ],
+      "time_seconds": 30
+    },
+    {
+      "id": "Q014",
+      "topic": "composite_key",
+      "question": "A table has columns A, B, and C. Both (A, B) and (B, C) uniquely identify records. Which are valid composite keys?",
+      "options": [
+        "A and B",
+        "B and C",
+        "Both (A, B) and (B, C)",
+        "None of the above"
+      ],
+      "answer": 2,
+      "explanation": "Since both attribute pairs (A, B) and (B, C) can uniquely identify records, both qualify as valid composite keys.",
+      "difficulty": "medium",
+      "tags": [
+        "composite_key",
+        "attribute_combinations"
+      ],
+      "time_seconds": 45
+    },
+    {
+      "id": "Q015",
+      "topic": "surrogate_key",
+      "question": "Which key is not derived from application data?",
+      "options": [
+        "Surrogate Key",
+        "Candidate Key",
+        "Foreign Key",
+        "Composite Key"
+      ],
+      "answer": 0,
+      "explanation": "A Surrogate Key is an artificial key generated by the system and is not derived from application or real-world data.",
+      "difficulty": "easy",
+      "tags": [
+        "surrogate_key",
+        "artificial_key"
+      ],
+      "time_seconds": 30
+    },
+    {
+      "id": "Q016",
+      "topic": "partial_key",
+      "question": "In a weak entity set, a partial key is:",
+      "options": [
+        "A foreign key",
+        "A key that fully identifies the entity",
+        "A key that only partially identifies an entity",
+        "A surrogate key"
+      ],
+      "answer": 2,
+      "explanation": "A Partial Key identifies a record only within the subset of an owner entity, requiring the owner's primary key for full identification.",
+      "difficulty": "medium",
+      "tags": [
+        "partial_key",
+        "weak_entity"
+      ],
+      "time_seconds": 45
+    },
+    {
+      "id": "Q017",
+      "topic": "super_key",
+      "question": "A key that includes more attributes than necessary to uniquely identify a record is:",
+      "options": [
+        "Composite Key",
+        "Candidate Key",
+        "Super Key",
+        "Surrogate Key"
+      ],
+      "answer": 2,
+      "explanation": "A Super Key can include extra, unnecessary attributes alongside the identifying attributes while still maintaining uniqueness.",
+      "difficulty": "easy",
+      "tags": [
+        "super_key",
+        "minimality",
+        "attributes"
+      ],
+      "time_seconds": 30
+    },
+    {
+      "id": "Q018",
+      "topic": "unique_key",
+      "question": "Which key(s) can contain null values?",
+      "options": [
+        "Primary Key",
+        "Unique Key",
+        "Composite Key",
+        "Surrogate Key"
+      ],
+      "answer": 1,
+      "explanation": "A Unique Key allows NULL values (depending on DBMS implementation), whereas a Primary Key strictly forbids NULLs.",
+      "difficulty": "easy",
+      "tags": [
+        "unique_key",
+        "null_values"
+      ],
+      "time_seconds": 30
+    },
+    {
+      "id": "Q019",
+      "topic": "surrogate_key",
+      "question": "Which of the following is automatically created by the system, typically as an integer or GUID?",
+      "options": [
+        "Alternate Key",
+        "Surrogate Key",
+        "Foreign Key",
+        "Unique Key"
+      ],
+      "answer": 1,
+      "explanation": "Surrogate keys are generated automatically by database systems, commonly utilizing auto-increment integers or GUIDs/UUIDs.",
+      "difficulty": "easy",
+      "tags": [
+        "surrogate_key",
+        "auto_increment",
+        "guid"
+      ],
+      "time_seconds": 30
+    },
+    {
+      "id": "Q020",
+      "topic": "surrogate_key",
+      "question": "The term \"Natural Key\" is often used in contrast to which of the following?",
+      "options": [
+        "Alternate Key",
+        "Super Key",
+        "Surrogate Key",
+        "Composite Key"
+      ],
+      "answer": 2,
+      "explanation": "Natural keys (derived from real-world data like email or national ID) are contrasted directly with Surrogate keys (artificial identifiers).",
+      "difficulty": "easy",
+      "tags": [
+        "natural_key",
+        "surrogate_key"
+      ],
+      "time_seconds": 30
+    },
+    {
+      "id": "Q021",
+      "topic": "key_comparisons",
+      "question": "Which type of database index is automatically created by default on a Primary Key in most DBMS, compared to a Unique Key?",
+      "options": [
+        "Clustered index for Primary Key, non-clustered index for Unique Key",
+        "Non-clustered index for Primary Key, clustered index for Unique Key",
+        "Hash index for Primary Key, B-tree index for Unique Key",
+        "Bitmap index for Primary Key, clustered index for Unique Key"
+      ],
+      "answer": 0,
+      "explanation": "In most DBMS implementations, defining a Primary Key automatically creates a clustered index, whereas a Unique Key creates a non-clustered index.",
+      "difficulty": "hard",
+      "tags": [
+        "indexing",
+        "clustered_index",
+        "primary_key",
+        "unique_key"
+      ],
+      "time_seconds": 60
+    },
+    {
+      "id": "Q022",
+      "topic": "key_comparisons",
+      "question": "Which integrity constraints are enforced by a Primary Key and a Foreign Key, respectively?",
+      "options": [
+        "Domain integrity and Referential integrity",
+        "Entity integrity and Referential integrity",
+        "Referential integrity and Entity integrity",
+        "User-defined integrity and Domain integrity"
+      ],
+      "answer": 1,
+      "explanation": "A Primary Key enforces Entity integrity (every record is unique and identifiable), whereas a Foreign Key enforces Referential integrity between tables.",
+      "difficulty": "medium",
+      "tags": [
+        "entity_integrity",
+        "referential_integrity",
+        "constraints"
+      ],
+      "time_seconds": 45
+    },
+    {
+      "id": "Q023",
+      "topic": "partial_key",
+      "question": "How is the composite primary key of a weak entity set formed?",
+      "options": [
+        "By combining the partial key with the primary key of the identifying strong entity",
+        "By combining two partial keys from the same weak entity",
+        "By combining the partial key with a surrogate key",
+        "By assigning a foreign key without any partial key"
+      ],
+      "answer": 0,
+      "explanation": "A weak entity does not possess a primary key of its own; its primary key is formed by combining its partial key (discriminator) with the primary key of the owner strong entity.",
+      "difficulty": "hard",
+      "tags": [
+        "partial_key",
+        "weak_entity",
+        "composite_primary_key"
+      ],
+      "time_seconds": 60
+    },
+    {
+      "id": "Q024",
+      "topic": "candidate_key",
+      "question": "In relational database theory, what is the exact relationship between Candidate Keys and Super Keys?",
+      "options": [
+        "Every Super Key is a Candidate Key, but not every Candidate Key is a Super Key",
+        "Candidate Keys and Super Keys are completely disjoint sets",
+        "A Candidate Key is formed only by combining multiple Super Keys",
+        "Every Candidate Key is a Super Key, but not every Super Key is a Candidate Key"
+      ],
+      "answer": 3,
+      "explanation": "Every Candidate Key is a minimal Super Key, meaning Candidate Keys form a subset of Super Keys, but Super Keys may contain non-minimal extra attributes.",
+      "difficulty": "medium",
+      "tags": [
+        "candidate_key",
+        "super_key",
+        "relational_theory"
+      ],
+      "time_seconds": 60
+    },
+    {
+      "id": "Q025",
+      "topic": "alternate_key",
+      "question": "An Alternate Key is also referred to as which of the following?",
+      "options": [
+        "Secondary Key",
+        "Surrogate Key",
+        "Foreign Key",
+        "Partial Key"
+      ],
+      "answer": 0,
+      "explanation": "An Alternate Key is any candidate key not selected as the primary key and is sometimes called a secondary key.",
+      "difficulty": "easy",
+      "tags": [
+        "alternate_key",
+        "secondary_key",
+        "terminology"
+      ],
+      "time_seconds": 30
+    },
+    {
+      "id": "Q026",
+      "topic": "surrogate_key",
+      "question": "In database design, which of the following represents a primary reason to choose a Surrogate Key over a Natural Key?",
+      "options": [
+        "Surrogate keys have rich business logic embedded in their values",
+        "Surrogate keys allow multiple NULL values across records",
+        "Surrogate keys are always composite keys requiring multiple columns",
+        "Surrogate keys remain stable and protect table relationships when real-world natural data changes"
+      ],
+      "answer": 3,
+      "explanation": "Surrogate keys are chosen because they simplify key management, remain stable over time, and do not change when real-world application data is updated.",
+      "difficulty": "hard",
+      "tags": [
+        "surrogate_key",
+        "database_design",
+        "stability"
+      ],
+      "time_seconds": 60
+    },
+    {
+      "id": "Q027",
+      "topic": "unique_key",
+      "question": "How do Primary Keys and Unique Keys differ regarding the number of constraints allowed per table?",
+      "options": [
+        "A table can have multiple Primary Keys, but only one Unique Key",
+        "A table can have only one Primary Key, but multiple Unique Keys can be defined",
+        "Both Primary Keys and Unique Keys are strictly limited to one per table",
+        "A table cannot have both a Primary Key and a Unique Key simultaneously"
+      ],
+      "answer": 1,
+      "explanation": "A relational table is restricted to exactly one Primary Key, whereas multiple Unique Key constraints can be defined on non-primary columns.",
+      "difficulty": "easy",
+      "tags": [
+        "primary_key",
+        "unique_key",
+        "table_constraints"
+      ],
+      "time_seconds": 45
+    },
+    {
+      "id": "Q028",
+      "topic": "foreign_key",
+      "question": "Under what condition can a Foreign Key column contain NULL values in a relational table?",
+      "options": [
+        "A Foreign Key can contain NULL values if the relationship is optional and NOT NULL is not enforced",
+        "A Foreign Key can never contain NULL values under any DBMS",
+        "A Foreign Key can contain NULL values only if the referenced Primary Key also contains NULL",
+        "A Foreign Key allows NULL values only when used as a composite primary key"
+      ],
+      "answer": 0,
+      "explanation": "A Foreign Key can contain NULL values to represent optional relationships, provided it has not been explicitly defined with a NOT NULL constraint.",
+      "difficulty": "medium",
+      "tags": [
+        "foreign_key",
+        "null_handling",
+        "optional_relationships"
+      ],
+      "time_seconds": 60
+    },
+    {
+      "id": "Q029",
+      "topic": "composite_key",
+      "question": "When is a database designer most justified in implementing a Composite Key?",
+      "options": [
+        "When referencing a foreign key from a different database instance",
+        "When every single column in the table is already completely unique",
+        "When the table requires a system-generated auto-increment counter",
+        "When no single column is sufficient to guarantee uniqueness, requiring multiple columns together"
+      ],
+      "answer": 3,
+      "explanation": "A Composite Key is implemented when individual columns contain duplicate values, but their combination guarantees uniqueness for each row.",
+      "difficulty": "medium",
+      "tags": [
+        "composite_key",
+        "database_modeling"
+      ],
+      "time_seconds": 60
+    },
+    {
+      "id": "Q030",
+      "topic": "primary_key",
+      "question": "Which of the following combinations of properties strictly defines the requirements for a Primary Key column?",
+      "options": [
+        "Must be unique and must not contain NULL values",
+        "Must be unique and must allow one NULL value",
+        "Must be minimal and must allow duplicates",
+        "Must be system-generated and must be composite"
+      ],
+      "answer": 0,
+      "explanation": "A Primary Key requires that every value is distinct (Unique) and no value can be missing (NOT NULL).",
+      "difficulty": "easy",
+      "tags": [
+        "primary_key",
+        "unique",
+        "not_null"
+      ],
+      "time_seconds": 45
+    }
+  ]
+}
